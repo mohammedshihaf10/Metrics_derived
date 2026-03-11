@@ -1,0 +1,8 @@
+{
+  "name": "pymcdc",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "pymcdc"
+  ]
+}

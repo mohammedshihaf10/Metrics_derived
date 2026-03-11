@@ -1,0 +1,8 @@
+{
+  "name": "crosshair",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "crosshair"
+  ]
+}
