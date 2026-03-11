@@ -1,0 +1,197 @@
+radon notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+radon cc output
+```text
+actionscicd\somecode.py
+    F 15:0 load_datafile - A (3)
+    F 9:0 add_arrays - A (1)
+    F 32:0 unused_fn - A (1)
+tests\test_somecode.py
+    C 8:0 TestSomeCode - A (2)
+    M 11:4 TestSomeCode.test_add_arrays - A (1)
+    M 18:4 TestSomeCode.test_load_datafile - A (1)
+```
+
+radon mi output
+```text
+setup.py - A
+actionscicd\somecode.py - A
+actionscicd\__init__.py - A
+actionscicd\data\__init__.py - A
+docs\source\conf.py - A
+tests\test_somecode.py - A
+tests\__init__.py - A
+```
+
+radon raw output
+```text
+actionscicd\somecode.py
+    LOC: 35
+    LLOC: 22
+    SLOC: 18
+    Comments: 0
+    Single comments: 3
+    Multi: 2
+    Blank: 12
+tests\test_somecode.py
+    LOC: 27
+    LLOC: 18
+    SLOC: 14
+    Comments: 0
+    Single comments: 4
+    Multi: 0
+    Blank: 9
+```
+
+radon hal output
+```text
+actionscicd\somecode.py:
+    vocabulary: 6
+    length: 6
+    volume: 15.509775004326936
+    difficulty: 1.0
+    effort: 15.509775004326936
+    time: 0.861654166907052
+    bugs: 0.005169925001442312
+tests\test_somecode.py:
+    vocabulary: 5
+    length: 6
+    volume: 13.931568569324174
+    difficulty: 0.5
+    effort: 6.965784284662087
+    time: 0.3869880158145604
+    bugs: 0.004643856189774725
+```
+
+This file shows which metrics from the output of
+radon_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- radon cc output
+- radon mi output
+- radon raw output
+- radon hal output
+
+
+Final classification
+--------------------
+1. Maintainability Assessment
+2. Code Quality Monitoring
+3. Code Review Assistance
+4. Refactoring Prioritization
+5. Risk Identification
+6. Technical Debt Detection
+7. Testability Evaluation
+
+
+Mapping
+-------
+
+Maintainability Assessment
+- maps to these notebook output metrics:
+  - radon mi output -> file maintainability grades
+  - radon cc output -> per-function and per-method complexity grades and scores
+  - radon raw output -> LOC, LLOC, SLOC, Comments, Blank
+  - radon hal output -> volume, difficulty, effort, time, bugs
+- final mapping:
+  - Maintainability Assessment = Available from radon notebook output
+
+
+Code Quality Monitoring
+- maps to these notebook output metrics:
+  - radon mi output -> maintainability grades by file
+  - radon cc output -> complexity grades by function or method
+  - radon raw output -> file size and comment statistics
+  - radon hal output -> Halstead effort and volume values
+- final mapping:
+  - Code Quality Monitoring = Available from radon notebook output
+
+
+Code Review Assistance
+- maps to these notebook output metrics:
+  - radon cc output -> exact function, class, and method hotspots
+  - radon mi output -> file-level maintainability hotspots
+  - radon raw output -> file-level code size context
+- final mapping:
+  - Code Review Assistance = Available from radon notebook output
+
+
+Refactoring Prioritization
+- maps to these notebook output metrics:
+  - radon cc output -> higher complexity functions should be considered first
+  - radon mi output -> lower maintainability grade files should be prioritized
+  - radon hal output -> higher effort values indicate harder-to-understand areas
+- final mapping:
+  - Refactoring Prioritization = Available from radon notebook output
+
+
+Risk Identification
+- maps to these notebook output metrics:
+  - radon cc output -> higher complexity indicates logic risk hotspots
+  - radon hal output -> higher effort and bug estimates indicate riskier code
+  - radon raw output -> large files with low-level comments can indicate review risk
+- final mapping:
+  - Risk Identification = Available from radon notebook output
+
+
+Technical Debt Detection
+- maps to these notebook output metrics:
+  - radon mi output -> maintainability grades
+  - radon cc output -> complexity debt indicators
+  - radon hal output -> effort and bug estimates
+- final mapping:
+  - Technical Debt Detection = Available from radon notebook output
+
+
+Testability Evaluation
+- maps to these notebook output metrics:
+  - radon cc output -> lower complexity implies easier testing
+  - radon raw output -> file size and structure provide testability context
+  - radon hal output -> effort and difficulty provide indirect testing-effort signals
+- final mapping:
+  - Testability Evaluation = Available from radon notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- radon cc output = cyclomatic complexity grades and scores
+- radon mi output = maintainability index grades
+- radon raw output = LOC, LLOC, SLOC, comments, blank lines, comment stats
+- radon hal output = Halstead metrics
+- current highest function complexity in sample repo = load_datafile with score 3
+- all current files in the sample repo have MI grade A
+
+
+Final classification result
+---------------------------
+- Maintainability Assessment = Available
+- Code Quality Monitoring = Available
+- Code Review Assistance = Available
+- Refactoring Prioritization = Available
+- Risk Identification = Available
+- Technical Debt Detection = Available
+- Testability Evaluation = Available
+
+
+Short version
+-------------
+- Maintainability Assessment -> radon mi / cc / raw / hal
+- Code Quality Monitoring -> track MI, CC, size, comments, and Halstead values
+- Code Review Assistance -> use file, class, and function hotspots from radon
+- Refactoring Prioritization -> prioritize high complexity, low maintainability, high effort
+- Risk Identification -> use complexity and Halstead bug or effort indicators
+- Technical Debt Detection -> use maintainability and complexity as debt signals
+- Testability Evaluation -> infer testing difficulty from complexity and size
+
+
+Parameters from output used for mapping
+---------------------------------------
+- radon cc output -> grade, complexity score, function or method entry
+- radon mi output -> maintainability grade
+- radon raw output -> LOC, LLOC, SLOC, Comments, Single comments, Multi, Blank, comment stats
+- radon hal output -> h1, h2, N1, N2, vocabulary, length, calculated_length, volume, difficulty, effort, time, bugs
