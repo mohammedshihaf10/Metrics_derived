@@ -1,0 +1,191 @@
+bandit notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+bandit json output
+```json
+{
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 104,
+      "CONFIDENCE.MEDIUM": 1,
+      "SEVERITY.HIGH": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.LOW": 103,
+      "loc": 9301,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "filename": "hashes\\sha1.py",
+      "line_number": 135,
+      "test_id": "B324",
+      "issue_severity": "HIGH",
+      "issue_confidence": "HIGH",
+      "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False"
+    },
+    {
+      "filename": "web_programming\\download_images_from_google_query.py",
+      "line_number": 99,
+      "test_id": "B310",
+      "issue_severity": "MEDIUM",
+      "issue_confidence": "HIGH",
+      "issue_text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected."
+    },
+    {
+      "filename": "web_programming\\recaptcha_verification.py",
+      "line_number": 53,
+      "test_id": "B105",
+      "issue_severity": "LOW",
+      "issue_confidence": "MEDIUM",
+      "issue_text": "Possible hardcoded password: 'secretKey'"
+    },
+    {
+      "filename": "ciphers\\affine_cipher.py",
+      "line_number": 79,
+      "test_id": "B311",
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes."
+    },
+    {
+      "filename": "ciphers\\base64_cipher.py",
+      "line_number": 108,
+      "test_id": "B101",
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code."
+    }
+  ]
+}
+```
+
+This file shows which metrics from the output of
+`bandit_notebook.ipynb` map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- `bandit_report/bandit.json`
+
+Final classification
+--------------------
+1. Security Vulnerability detection
+2. Secure Coding validation
+3. Input Validation Testing
+4. Data flow security analysis
+5. Authentication and authorization weakness detection
+6. Dependency and library vulnerability detection (partial)
+7. Compliance and security standard validation
+
+Mapping
+-------
+
+Security Vulnerability detection
+- maps to these notebook output metrics:
+  - bandit json output -> `results`
+  - bandit json output -> `test_id`, `test_name`, `issue_text`, `issue_severity`, `issue_confidence`, `filename`, `line_number`
+- final mapping:
+  - Security Vulnerability detection = Available from bandit notebook output
+
+
+Secure Coding validation
+- maps to these notebook output metrics:
+  - bandit json output -> violated security rules such as `B324`, `B310`, `B105`, `B311`, `B101`
+  - bandit json output -> CWE metadata linked to findings
+- final mapping:
+  - Secure Coding validation = Available from bandit notebook output
+
+
+Input Validation Testing
+- maps to these notebook output metrics:
+  - bandit json output -> `B310` finding on URL open handling
+- final mapping:
+  - Input Validation Testing = Available from current bandit notebook output
+
+
+Data flow security analysis
+- maps to these notebook output metrics:
+  - bandit json output -> file location, code snippet, issue text, line range
+- final mapping:
+  - Data flow security analysis = Available from bandit notebook output
+
+
+Authentication and authorization weakness detection
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Authentication and authorization weakness detection = Not shown in current notebook output
+
+
+Dependency and library vulnerability detection (partial)
+- maps to these notebook output metrics:
+  - bandit json output -> weak/insecure API usage such as `B324` weak SHA1 and `B311` insecure random use
+- final mapping:
+  - Dependency and library vulnerability detection (partial) = Partial from insecure library/API usage only
+
+
+Compliance and security standard validation
+- maps to these notebook output metrics:
+  - bandit json output -> severity and confidence tagged issues
+  - bandit json output -> CWE-linked findings
+  - bandit json output -> summary counts in `metrics._totals`
+- final mapping:
+  - Compliance and security standard validation = Available from bandit notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: existing Python repo at `..\Code Duplication\github-actions-cicd-example`
+- analyzed targets: `hashes`, `ciphers`, `other`, `web_programming`
+- total LOC analyzed: `9301`
+- severity counts:
+  - high = `1`
+  - medium = `1`
+  - low = `103`
+- confidence counts:
+  - high = `104`
+  - medium = `1`
+- dominant triggered rules:
+  - `B101 assert_used` = `81`
+  - `B311 blacklist` = `21`
+  - `B105 hardcoded_password_string` = `1`
+  - `B310 blacklist` = `1`
+  - `B324 hashlib` = `1`
+- representative findings:
+  - `hashes\sha1.py:135` -> `B324` weak SHA1 hash
+  - `web_programming\download_images_from_google_query.py:99` -> `B310` URL open permitted schemes audit
+  - `web_programming\recaptcha_verification.py:53` -> `B105` hardcoded password string
+  - `ciphers\affine_cipher.py:79` -> `B311` insecure pseudo-random generator
+  - `ciphers\base64_cipher.py:108` -> `B101` assert used
+
+
+Final classification result
+---------------------------
+- Security Vulnerability detection = Available
+- Secure Coding validation = Available
+- Input Validation Testing = Available
+- Data flow security analysis = Available
+- Authentication and authorization weakness detection = Not shown in current output
+- Dependency and library vulnerability detection (partial) = Partial
+- Compliance and security standard validation = Available
+
+
+Short version
+-------------
+- Security Vulnerability detection -> Bandit produces rule-based security findings with file and line
+- Secure Coding validation -> insecure patterns like weak hashes, hardcoded secrets, unsafe random, and assert misuse are flagged
+- Input Validation Testing -> URL-open handling issue is present in current output
+- Data flow security analysis -> source locations, line ranges, code snippets, and issue text are available
+- Authentication and authorization weakness detection -> not triggered in this run
+- Dependency and library vulnerability detection -> partial through insecure library/API usage detection
+- Compliance and security standard validation -> severity, confidence, and CWE-linked security findings are available
+
+
+Parameters from output used for mapping
+---------------------------------------
+- bandit json output -> test_id, test_name, issue_text, issue_severity, issue_confidence, filename, line_number, line_range, code, more_info, issue_cwe
+- bandit json output -> metrics._totals.loc, metrics._totals.nosec, metrics._totals.skipped_tests, metrics._totals severity/confidence counts
