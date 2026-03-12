@@ -1,0 +1,148 @@
+pydriller notebook output to classification mapping
+==================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+code churn json output
+```json
+{
+  "summary": {
+    "total_commits": 41,
+    "total_files_touched": 36,
+    "total_file_modifications": 88
+  },
+  "top_files": [
+    {
+      "path": "README.md",
+      "commit_count": 10,
+      "added_lines": 100,
+      "deleted_lines": 35,
+      "total_churn": 135
+    },
+    {
+      "path": "setup.cfg",
+      "commit_count": 9,
+      "added_lines": 94,
+      "deleted_lines": 54,
+      "total_churn": 148
+    },
+    {
+      "path": "tests\\test_somecode.py",
+      "commit_count": 5,
+      "added_lines": 42,
+      "deleted_lines": 15,
+      "total_churn": 57
+    },
+    {
+      "path": "actionscicd\\somecode.py",
+      "commit_count": 4,
+      "added_lines": 13,
+      "deleted_lines": 15,
+      "total_churn": 28
+    }
+  ]
+}
+```
+
+This file shows which metrics from the output of
+`pydriller_notebook.ipynb` map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- `pydriller_report/code_churn.json`
+
+Final classification
+--------------------
+1. Risk-based testing prioritization
+2. Regression testing focus
+3. Defect prediction
+4. Test case maintenance identification
+5. Change Impact analysis
+
+Mapping
+-------
+
+Risk-based testing prioritization
+- maps to these notebook output metrics:
+  - `summary.total_commits`
+  - `top_files[].commit_count`
+  - `top_files[].total_churn`
+- final mapping:
+  - Risk-based testing prioritization = Available from pydriller notebook output
+
+
+Regression testing focus
+- maps to these notebook output metrics:
+  - `top_files[].path`
+  - `top_files[].commit_count`
+  - `top_files[].last_commit`
+- final mapping:
+  - Regression testing focus = Available from pydriller notebook output
+
+
+Defect prediction
+- maps to these notebook output metrics:
+  - `top_files[].commit_count`
+  - `top_files[].added_lines`
+  - `top_files[].deleted_lines`
+  - `top_files[].total_churn`
+- final mapping:
+  - Defect prediction = Available from pydriller notebook output
+
+
+Test case maintenance identification
+- maps to these notebook output metrics:
+  - `top_files[].path` for `tests\test_somecode.py`
+  - `top_files[].commit_count`
+  - `top_files[].total_churn`
+- final mapping:
+  - Test case maintenance identification = Available from pydriller notebook output
+
+
+Change Impact analysis
+- maps to these notebook output metrics:
+  - `top_files[].path`
+  - `top_files[].commit_count`
+  - `top_files[].added_lines`
+  - `top_files[].deleted_lines`
+  - `top_files[].last_commit`
+- final mapping:
+  - Change Impact analysis = Available from pydriller notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: existing Git-backed Python repo at `..\Cyclomatic Complexity\github-actions-cicd-example`
+- total commits analyzed: `41`
+- total files touched: `36`
+- total file modifications: `88`
+- highest churn files:
+  - `README.md` -> `10` commits, `135` total churn
+  - `setup.cfg` -> `9` commits, `148` total churn
+  - `tests\test_somecode.py` -> `5` commits, `57` total churn
+  - `actionscicd\somecode.py` -> `4` commits, `28` total churn
+
+
+Final classification result
+---------------------------
+- Risk-based testing prioritization = Available
+- Regression testing focus = Available
+- Defect prediction = Available
+- Test case maintenance identification = Available
+- Change Impact analysis = Available
+
+
+Short version
+-------------
+- Risk-based testing prioritization -> high-churn files can be tested first
+- Regression testing focus -> recently and repeatedly changed files stand out
+- Defect prediction -> churn-heavy files are identifiable
+- Test case maintenance identification -> churn is visible in `tests\test_somecode.py`
+- Change Impact analysis -> per-file commit count and churn totals are available
+
+
+Parameters from output used for mapping
+---------------------------------------
+- `summary.total_commits`, `summary.total_files_touched`, `summary.total_file_modifications`
+- `top_files[].path`, `top_files[].commit_count`, `top_files[].added_lines`, `top_files[].deleted_lines`, `top_files[].total_churn`, `top_files[].last_commit`

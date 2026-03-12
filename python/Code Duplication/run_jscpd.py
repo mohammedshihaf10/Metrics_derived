@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+
+from __future__ import annotations
+
+import argparse
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+TOOL_DIR = ROOT / "tools" / "jscpd"
+DEFAULT_REPO_PATH = ROOT / "github-actions-cicd-example"
+DEFAULT_OUTPUT_PATH = ROOT / "jscpd_report"
+
+
+def jscpd_cmd() -> Path:
+    if sys.platform.startswith("win"):
+        return TOOL_DIR / "node_modules" / ".bin" / "jscpd.cmd"
+    return TOOL_DIR / "node_modules" / ".bin" / "jscpd"
+
+
+def require_node() -> None:
+    subprocess.run(["node", "--version"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def install_jscpd() -> int:
+    require_node()
+    if not (TOOL_DIR / "package.json").is_file():
+        raise FileNotFoundError(f"Missing package.json in {TOOL_DIR}")
+    return subprocess.run(["npm.cmd", "install"], cwd=str(TOOL_DIR)).returncode
+
+
+def prepare_output_dir(output_dir: Path) -> None:
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+
+def run_jscpd(repo: Path, output_dir: Path, tool_args: list[str]) -> int:
+    require_node()
+    if not repo.is_dir():
+        raise SystemExit(f"Repo path does not exist or is not a directory: {repo}")
+    cmd = jscpd_cmd()
+    if not cmd.is_file():
+        raise FileNotFoundError(f"Missing jscpd executable: {cmd}")
+    prepare_output_dir(output_dir)
+    command = [str(cmd), "--output", str(output_dir), *tool_args]
+    return subprocess.run(command, cwd=str(repo)).returncode
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Install or run jscpd against a provided repo.")
+    subparsers = parser.add_subparsers(dest="command", required=True)
+    subparsers.add_parser("install", help="Install jscpd")
+    run_parser = subparsers.add_parser("run", help="Run jscpd")
+    run_parser.add_argument("--repo", help="Target repository path")
+    run_parser.add_argument("--output", help="Output report directory")
+    run_parser.add_argument("tool_args", nargs=argparse.REMAINDER, help="Arguments passed directly to jscpd")
+    return parser
+
+
+def normalize_tool_args(args: list[str]) -> list[str]:
+    return args[1:] if args and args[0] == "--" else args
+
+
+def main() -> int:
+    parser = build_parser()
+    args = parser.parse_args()
+    if args.command == "install":
+        return install_jscpd()
+    repo = Path(args.repo or DEFAULT_REPO_PATH).resolve()
+    output_dir = Path(args.output or DEFAULT_OUTPUT_PATH).resolve()
+    tool_args = normalize_tool_args(args.tool_args)
+    return run_jscpd(repo, output_dir, tool_args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

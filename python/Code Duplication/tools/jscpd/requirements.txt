@@ -1,0 +1,3 @@
+# No Python dependency installation is required for this tool.
+# Runtime prerequisite: Node.js with npm available on PATH.
+# Tool package: jscpd (installed locally via npm)

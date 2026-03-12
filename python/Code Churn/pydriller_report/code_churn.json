@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "total_commits": 41,
+    "total_files_touched": 36,
+    "total_file_modifications": 88
+  },
+  "top_files": [
+    {
+      "path": "README.md",
+      "commit_count": 10,
+      "added_lines": 100,
+      "deleted_lines": 35,
+      "total_churn": 135,
+      "last_commit": "8537faf1f3ec4af16785c75a0c0dd77fe50bef5b"
+    },
+    {
+      "path": "setup.cfg",
+      "commit_count": 9,
+      "added_lines": 94,
+      "deleted_lines": 54,
+      "total_churn": 148,
+      "last_commit": "43206ffc8e30aef104d7c1ec793d79cea8537e61"
+    },
+    {
+      "path": ".github\\workflows\\5_docs_deploy.yml",
+      "commit_count": 5,
+      "added_lines": 71,
+      "deleted_lines": 11,
+      "total_churn": 82,
+      "last_commit": "8537faf1f3ec4af16785c75a0c0dd77fe50bef5b"
+    },
+    {
+      "path": "tests\\test_somecode.py",
+      "commit_count": 5,
+      "added_lines": 42,
+      "deleted_lines": 15,
+      "total_churn": 57,
+      "last_commit": "7e52009bacd15f7fdd78c06a904a4f7bcb1a222c"
+    },
+    {
+      "path": ".github\\workflows\\4_docs_build.yml",
+      "commit_count": 5,
+      "added_lines": 44,
+      "deleted_lines": 4,
+      "total_churn": 48,
+      "last_commit": "cddfa54b8c30fb7760ecd1364e5989e8a3e924cd"
+    },
+    {
+      "path": ".github\\workflows\\coverage.yml",
+      "commit_count": 4,
+      "added_lines": 55,
+      "deleted_lines": 3,
+      "total_churn": 58,
+      "last_commit": "c1f23a5ad7aabcd5c655cba4f18c3c7833b75e36"
+    },
+    {
+      "path": "actionscicd\\somecode.py",
+      "commit_count": 4,
+      "added_lines": 13,
+      "deleted_lines": 15,
+      "total_churn": 28,
+      "last_commit": "56b0c4d262e98bb7b864d567d656ffa13f64b956"
+    },
+    {
+      "path": "actionsci\\somecode.py",
+      "commit_count": 3,
+      "added_lines": 43,
+      "deleted_lines": 6,
+      "total_churn": 49,
+      "last_commit": "9d352c8638d8c84455e647566d38b541ca085db7"
+    },
+    {
+      "path": ".github\\workflows\\tests.yml",
+      "commit_count": 3,
+      "added_lines": 38,
+      "deleted_lines": 3,
+      "total_churn": 41,
+      "last_commit": "350e10de950afade5634bec9fb181c88d2335302"
+    },
+    {
+      "path": "setup.py",
+      "commit_count": 3,
+      "added_lines": 12,
+      "deleted_lines": 8,
+      "total_churn": 20,
+      "last_commit": "c1f23a5ad7aabcd5c655cba4f18c3c7833b75e36"
+    }
+  ]
+}

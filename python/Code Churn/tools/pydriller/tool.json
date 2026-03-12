@@ -1,0 +1,5 @@
+{
+  "name": "pydriller",
+  "language": "python",
+  "entrypoint": "python tools/pydriller/analyze_churn.py"
+}

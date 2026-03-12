@@ -1,0 +1,3 @@
+-r tools/complexipy/requirements.txt
+-r tools/flake8cog/requirements.txt
+-r tools/pyrefact/requirements.txt

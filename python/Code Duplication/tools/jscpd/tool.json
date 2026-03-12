@@ -1,0 +1,6 @@
+{
+  "name": "jscpd",
+  "entrypoint": [
+    "node_modules/.bin/jscpd"
+  ]
+}

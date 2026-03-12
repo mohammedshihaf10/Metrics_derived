@@ -1,0 +1,16 @@
+diff-cover notebook output to classification mapping
+===================================================
+
+Final classification
+--------------------
+1. Regression Testing Monitoring
+2. Test Suite Effectiveness Tracking
+3. New code testing validation
+4. Quality Improvement Measurement
+5. Test Coverage Trend Monitoring
+6. CI/CD Quality Gate Enforcement
+7. Change Impact Analysis
+
+Parameters from output used for mapping
+---------------------------------------
+- diff-cover output -> diff coverage percent, changed lines, uncovered changed lines, file-level diff coverage

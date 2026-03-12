@@ -1,0 +1,8 @@
+{
+  "name": "complexipy",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "complexipy"
+  ]
+}

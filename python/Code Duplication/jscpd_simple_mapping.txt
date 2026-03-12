@@ -1,0 +1,173 @@
+jscpd notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+jscpd console summary output
+```text
+Format  Files analyzed  Total lines  Total tokens  Clones found  Duplicated lines  Duplicated tokens
+python  1158            117306       681425        258           3223 (2.75%)      28860 (4.24%)
+Found 258 clones.
+JSON report saved to d:\Projects\sample repo\Code Duplication\jscpd_report\jscpd-report.json
+Detection time: 7.008s
+```
+
+jscpd json totals
+```json
+{
+  "lines": 117306,
+  "tokens": 681425,
+  "sources": 1158,
+  "clones": 258,
+  "duplicatedLines": 3223,
+  "duplicatedTokens": 28860,
+  "percentage": 2.75,
+  "percentageTokens": 4.24
+}
+```
+
+jscpd json duplicate sample
+```json
+{
+  "format": "python",
+  "lines": 7,
+  "firstFile": {
+    "name": "project_euler\\problem_187\\sol1.py",
+    "start": 35,
+    "end": 41
+  },
+  "secondFile": {
+    "name": "project_euler\\problem_800\\sol1.py",
+    "start": 27,
+    "end": 33
+  }
+}
+```
+
+This file shows which metrics from the output of
+jscpd_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- jscpd console output
+- jscpd_report/jscpd-report.json
+
+
+Final classification
+--------------------
+1. Maintainability Testing
+2. Defect Propagation Risk Detection
+3. Refactoring Identification
+4. Code Quality Assessment
+5. Test Maintenance Reduction (partial)
+6. Refactoring Opportunity Detection
+7. Risk-based testing prioritization (partial)
+
+
+Mapping
+-------
+
+Maintainability Testing
+- maps to these notebook output metrics:
+  - jscpd json totals -> clones, duplicatedLines, duplicatedTokens, percentage, percentageTokens
+  - jscpd per-source stats -> duplicatedLines, duplicatedTokens, percentage
+  - jscpd duplicate entries -> firstFile, secondFile, start/end line ranges
+- final mapping:
+  - Maintainability Testing = Available from jscpd notebook output
+
+
+Defect Propagation Risk Detection
+- maps to these notebook output metrics:
+  - jscpd duplicate entries -> duplicated blocks shared across multiple files
+  - jscpd json totals -> clones found
+  - jscpd per-source stats -> files with non-zero duplicatedLines and cloned blocks
+- final mapping:
+  - Defect Propagation Risk Detection = Available from jscpd notebook output
+
+
+Refactoring Identification
+- maps to these notebook output metrics:
+  - jscpd duplicate entries -> exact file pairs and duplicated line ranges
+  - jscpd per-source stats -> duplication percentage per file
+- final mapping:
+  - Refactoring Identification = Available from jscpd notebook output
+
+
+Code Quality Assessment
+- maps to these notebook output metrics:
+  - jscpd json totals -> duplicatedLines percentage and duplicatedTokens percentage
+  - jscpd console summary -> total files analyzed, clones found, duplication percentages
+- final mapping:
+  - Code Quality Assessment = Available from jscpd notebook output
+
+
+Test Maintenance Reduction (partial)
+- maps to these notebook output metrics:
+  - jscpd duplicate entries -> duplicated test files or test-like modules
+  - jscpd per-source stats -> duplication in test code or repeated validation logic
+- final mapping:
+  - Test Maintenance Reduction (partial) = Partially available from jscpd notebook output
+
+
+Refactoring Opportunity Detection
+- maps to these notebook output metrics:
+  - jscpd duplicate entries -> concrete clone candidates for extraction or reuse
+  - jscpd json totals -> overall duplication burden
+- final mapping:
+  - Refactoring Opportunity Detection = Available from jscpd notebook output
+
+
+Risk-based testing prioritization (partial)
+- maps to these notebook output metrics:
+  - jscpd duplicate entries -> shared logic areas where one defect may affect multiple files
+  - jscpd per-source stats -> files with the highest duplication percentages
+- final mapping:
+  - Risk-based testing prioritization (partial) = Partially available from jscpd notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: github-actions-cicd-example (cloned Python repo: TheAlgorithms/Python)
+- files analyzed: 1158
+- total lines: 117306
+- total tokens: 681425
+- clones found: 258
+- duplicated lines: 3223 (2.75%)
+- duplicated tokens: 28860 (4.24%)
+- sample clone pair:
+  - project_euler\problem_187\sol1.py lines 35-41
+  - project_euler\problem_800\sol1.py lines 27-33
+- another strong clone pair:
+  - graphs\graph_adjacency_list.py lines 443-597
+  - graphs\graph_adjacency_matrix.py lines 455-609
+
+
+Final classification result
+---------------------------
+- Maintainability Testing = Available
+- Defect Propagation Risk Detection = Available
+- Refactoring Identification = Available
+- Code Quality Assessment = Available
+- Test Maintenance Reduction (partial) = Partial
+- Refactoring Opportunity Detection = Available
+- Risk-based testing prioritization (partial) = Partial
+
+
+Short version
+-------------
+- Maintainability Testing -> use clone counts, duplicated lines, and duplication percentages
+- Defect Propagation Risk Detection -> use cross-file duplicate blocks
+- Refactoring Identification -> use exact file and line clone locations
+- Code Quality Assessment -> use overall duplication percentages
+- Test Maintenance Reduction -> partial from duplicate test or repeated validation code
+- Refactoring Opportunity Detection -> use concrete clone pairs and clone ranges
+- Risk-based testing prioritization -> partial from highly duplicated hotspots
+
+
+Parameters from output used for mapping
+---------------------------------------
+- jscpd console output -> Files analyzed, Total lines, Total tokens, Clones found, Duplicated lines, Duplicated tokens, percentage
+- jscpd json totals -> lines, tokens, sources, clones, duplicatedLines, duplicatedTokens, percentage, percentageTokens
+- jscpd duplicate entries -> format, lines, fragment, firstFile.name, firstFile.start, firstFile.end, secondFile.name, secondFile.start, secondFile.end
+- jscpd per-source stats -> file-level clones, duplicatedLines, duplicatedTokens, percentage, percentageTokens
