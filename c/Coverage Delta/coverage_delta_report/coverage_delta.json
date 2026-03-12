@@ -1,0 +1,31 @@
+{
+  "base_ref": "HEAD~1",
+  "head_ref": "HEAD",
+  "changed_files": 1,
+  "changed_lines": 10,
+  "covered_changed_lines": 2,
+  "diff_coverage_percent": 20.0,
+  "files": [
+    {
+      "path": "cJSON.c",
+      "changed_lines": [
+        1601,
+        1602,
+        1603,
+        1604,
+        1605,
+        1786,
+        1787,
+        1788,
+        1789,
+        1790
+      ],
+      "changed_line_count": 10,
+      "covered_changed_lines": [
+        1601,
+        1786
+      ],
+      "covered_changed_line_count": 2
+    }
+  ]
+}

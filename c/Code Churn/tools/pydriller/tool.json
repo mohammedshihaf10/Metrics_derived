@@ -1,0 +1,7 @@
+{
+  "name": "pydriller",
+  "entrypoint": [
+    ".venv/Scripts/python.exe",
+    "analyze_churn.py"
+  ]
+}

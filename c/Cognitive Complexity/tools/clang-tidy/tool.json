@@ -1,0 +1,6 @@
+{
+  "name": "clang-tidy",
+  "kind": "system",
+  "language": "c",
+  "purpose": "cognitive-complexity analysis"
+}

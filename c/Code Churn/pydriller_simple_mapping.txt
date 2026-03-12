@@ -1,0 +1,103 @@
+pydriller notebook output to classification mapping
+==================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+pydriller JSON output
+```text
+summary.total_commits = 1109
+summary.total_files_touched = 250
+summary.total_file_modifications = 1785
+
+top_files[0] = cJSON.c, commit_count 444, total_churn 12617
+top_files[1] = cJSON_Utils.c, commit_count 144, total_churn 4070
+top_files[2] = CMakeLists.txt, commit_count 143, total_churn 969
+top_files[3] = cJSON.h, commit_count 142, total_churn 1143
+```
+
+This file shows which metrics from the output of
+pydriller_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- pydriller JSON output
+
+
+Final classification
+--------------------
+1. Risk-based testing prioritization
+2. Regression testing focus
+3. Defect prediction
+4. Test case maintenance identification
+5. Change Impact analysis
+
+
+Mapping
+-------
+
+Risk-based testing prioritization
+- maps to these notebook output metrics:
+  - pydriller JSON output -> top_files commit_count and total_churn
+- final mapping:
+  - Risk-based testing prioritization = Available from pydriller notebook output
+
+
+Regression testing focus
+- maps to these notebook output metrics:
+  - pydriller JSON output -> frequently changed files
+- final mapping:
+  - Regression testing focus = Available from pydriller notebook output
+
+
+Defect prediction
+- maps to these notebook output metrics:
+  - pydriller JSON output -> added_lines, deleted_lines, total_churn
+- final mapping:
+  - Defect prediction = Available from pydriller notebook output
+
+
+Test case maintenance identification
+- maps to these notebook output metrics:
+  - pydriller JSON output -> churn in test files such as tests\\misc_tests.c and test.c
+- final mapping:
+  - Test case maintenance identification = Available from pydriller notebook output
+
+
+Change Impact analysis
+- maps to these notebook output metrics:
+  - pydriller JSON output -> total files touched and top changed files
+- final mapping:
+  - Change Impact analysis = Available from pydriller notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- total commits analyzed = 1109
+- total files touched = 250
+- total file modifications = 1785
+- highest churn file = cJSON.c with 444 commits and 12617 total churn
+
+
+Final classification result
+---------------------------
+- Risk-based testing prioritization = Available
+- Regression testing focus = Available
+- Defect prediction = Available
+- Test case maintenance identification = Available
+- Change Impact analysis = Available
+
+
+Short version
+-------------
+- Risk-based testing prioritization -> prioritize high-churn files first
+- Regression testing focus -> repeatedly changed files deserve regression focus
+- Defect prediction -> churn-heavy files are likely defect hotspots
+- Test case maintenance identification -> churn in test files shows maintenance effort
+- Change Impact analysis -> total churn and changed-file ranking
+
+
+Parameters from output used for mapping
+---------------------------------------
+- pydriller JSON output -> total_commits, total_files_touched, total_file_modifications
+- pydriller JSON output -> path, commit_count, added_lines, deleted_lines, total_churn, last_commit

@@ -1,0 +1,138 @@
+coverage delta notebook output to classification mapping
+========================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+coverage delta json output
+```json
+{
+  "base_ref": "HEAD~1",
+  "head_ref": "HEAD",
+  "changed_files": 1,
+  "changed_lines": 10,
+  "covered_changed_lines": 0,
+  "diff_coverage_percent": 0.0,
+  "files": [
+    {
+      "path": "cJSON.c",
+      "changed_line_count": 10,
+      "covered_changed_line_count": 0
+    }
+  ]
+}
+```
+
+This file shows which metrics from the output of
+coverage_delta_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- coverage delta json output
+
+
+Final classification
+--------------------
+1. Regression Testing Monitoring
+2. Test Suite Effectiveness Tracking
+3. New code testing validation
+4. Quality Improvement Measurement
+5. Test Coverage Trend Monitoring
+6. CI/CD Quality Gate Enforcement
+7. Change Impact Analysis
+
+
+Mapping
+-------
+
+Regression Testing Monitoring
+- maps to these notebook output metrics:
+  - coverage delta json output -> base_ref, head_ref, diff_coverage_percent
+- final mapping:
+  - Regression Testing Monitoring = Available from coverage delta notebook output
+
+
+Test Suite Effectiveness Tracking
+- maps to these notebook output metrics:
+  - coverage delta json output -> changed_lines and covered_changed_lines
+- final mapping:
+  - Test Suite Effectiveness Tracking = Available from coverage delta notebook output
+
+
+New code testing validation
+- maps to these notebook output metrics:
+  - coverage delta json output -> changed_lines and covered_changed_lines
+- final mapping:
+  - New code testing validation = Available from coverage delta notebook output
+
+
+Quality Improvement Measurement
+- maps to these notebook output metrics:
+  - coverage delta json output -> diff_coverage_percent
+- final mapping:
+  - Quality Improvement Measurement = Available from coverage delta notebook output
+
+
+Test Coverage Trend Monitoring
+- maps to these notebook output metrics:
+  - coverage delta json output -> base_ref and head_ref
+- final mapping:
+  - Test Coverage Trend Monitoring = Available from coverage delta notebook output
+
+
+CI/CD Quality Gate Enforcement
+- maps to these notebook output metrics:
+  - coverage delta json output -> diff_coverage_percent and changed_lines
+- final mapping:
+  - CI/CD Quality Gate Enforcement = Available from coverage delta notebook output
+
+
+Change Impact Analysis
+- maps to these notebook output metrics:
+  - coverage delta json output -> files, changed_line_count, covered_changed_line_count
+- final mapping:
+  - Change Impact Analysis = Available from coverage delta notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- base_ref = HEAD~1
+- head_ref = HEAD
+- changed_files = 1
+- changed_lines = 10
+- covered_changed_lines = 0
+- diff_coverage_percent = 0.0
+- changed file = cJSON.c
+
+
+Final classification result
+---------------------------
+- Regression Testing Monitoring = Available
+- Test Suite Effectiveness Tracking = Available
+- New code testing validation = Available
+- Quality Improvement Measurement = Available
+- Test Coverage Trend Monitoring = Available
+- CI/CD Quality Gate Enforcement = Available
+- Change Impact Analysis = Available
+
+
+Short version
+-------------
+- Regression Testing Monitoring -> diff coverage between HEAD~1 and HEAD
+- Test Suite Effectiveness Tracking -> covered_changed_lines of changed_lines
+- New code testing validation -> changed code coverage
+- Quality Improvement Measurement -> diff_coverage_percent
+- Test Coverage Trend Monitoring -> base and head refs
+- CI/CD Quality Gate Enforcement -> changed code coverage gate
+- Change Impact Analysis -> changed file and changed line counts
+
+
+Parameters from output used for mapping
+---------------------------------------
+- coverage delta json output -> base_ref
+- coverage delta json output -> head_ref
+- coverage delta json output -> changed_files
+- coverage delta json output -> changed_lines
+- coverage delta json output -> covered_changed_lines
+- coverage delta json output -> diff_coverage_percent
+- coverage delta json output -> files

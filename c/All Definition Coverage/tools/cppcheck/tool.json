@@ -1,0 +1,6 @@
+{
+  "name": "cppcheck + lcov",
+  "kind": "system-combination",
+  "language": "c",
+  "purpose": "all-definition coverage analysis"
+}

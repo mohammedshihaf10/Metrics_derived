@@ -1,0 +1,589 @@
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:698:22: warning: function 'utf16_literal_to_utf8' has cognitive complexity of 28 (threshold 25) [readability-function-cognitive-complexity]
+  698 | static unsigned char utf16_literal_to_utf8(const unsigned char * const input_pointer, const unsigned char * const input_end, unsigned char **output_pointer)
+      |                      ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:708:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  708 |     if ((input_end - first_sequence) < 6)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:711:9: note: +1
+  711 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:718:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  718 |     if (((first_code >= 0xDC00) && (first_code <= 0xDFFF)))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:718:33: note: +1
+  718 |     if (((first_code >= 0xDC00) && (first_code <= 0xDFFF)))
+      |                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:720:9: note: +1
+  720 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:724:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  724 |     if ((first_code >= 0xD800) && (first_code <= 0xDBFF))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:724:32: note: +1
+  724 |     if ((first_code >= 0xD800) && (first_code <= 0xDBFF))
+      |                                ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:730:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  730 |         if ((input_end - second_sequence) < 6)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:733:13: note: +1
+  733 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:736:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  736 |         if ((second_sequence[0] != '\\') || (second_sequence[1] != 'u'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:736:42: note: +1
+  736 |         if ((second_sequence[0] != '\\') || (second_sequence[1] != 'u'))
+      |                                          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:739:13: note: +1
+  739 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:745:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  745 |         if ((second_code < 0xDC00) || (second_code > 0xDFFF))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:745:36: note: +1
+  745 |         if ((second_code < 0xDC00) || (second_code > 0xDFFF))
+      |                                    ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:748:13: note: +1
+  748 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:755:5: note: +1, nesting level increased to 1
+  755 |     else
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:764:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  764 |     if (codepoint < 0x80)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:769:10: note: +1, nesting level increased to 1
+  769 |     else if (codepoint < 0x800)
+      |          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:775:10: note: +1, nesting level increased to 1
+  775 |     else if (codepoint < 0x10000)
+      |          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:781:10: note: +1, nesting level increased to 1
+  781 |     else if (codepoint <= 0x10FFFF)
+      |          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:787:5: note: +1, nesting level increased to 1
+  787 |     else
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:790:9: note: +1
+  790 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:794:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  794 |     for (utf8_position = (unsigned char)(utf8_length - 1); utf8_position > 0; utf8_position--)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:801:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  801 |     if (utf8_length > 1)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:805:5: note: +1, nesting level increased to 1
+  805 |     else
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:819:19: warning: function 'parse_string' has cognitive complexity of 34 (threshold 25) [readability-function-cognitive-complexity]
+  819 | static cJSON_bool parse_string(cJSON * const item, parse_buffer * const input_buffer)
+      |                   ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:827:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  827 |     if (buffer_at_offset(input_buffer)[0] != '\"')
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:829:9: note: +1
+  829 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:836:9: note: +1, including nesting penalty of 0, nesting level increased to 1
+  836 |         while (((size_t)(input_end - input_buffer->content) < input_buffer->length) && (*input_end != '\"'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:836:85: note: +1
+  836 |         while (((size_t)(input_end - input_buffer->content) < input_buffer->length) && (*input_end != '\"'))
+      |                                                                                     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:839:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+  839 |             if (input_end[0] == '\\')
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:841:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  841 |                 if ((size_t)(input_end + 1 - input_buffer->content) >= input_buffer->length)
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:844:21: note: +1
+  844 |                     goto fail;
+      |                     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:851:9: note: +1, including nesting penalty of 0, nesting level increased to 1
+  851 |         if (((size_t)(input_end - input_buffer->content) >= input_buffer->length) || (*input_end != '\"'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:851:83: note: +1
+  851 |         if (((size_t)(input_end - input_buffer->content) >= input_buffer->length) || (*input_end != '\"'))
+      |                                                                                   ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:853:13: note: +1
+  853 |             goto fail; /* string ended unexpectedly */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:859:9: note: +1, including nesting penalty of 0, nesting level increased to 1
+  859 |         if (output == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:861:13: note: +1
+  861 |             goto fail; /* allocation failure */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:867:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  867 |     while (input_pointer < input_end)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:869:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  869 |         if (*input_pointer != '\\')
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:874:9: note: +1, nesting level increased to 2
+  874 |         else
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:877:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  877 |             if ((input_end - input_pointer) < 1)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:879:17: note: +1
+  879 |                 goto fail;
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:882:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  882 |             switch (input_pointer[1])
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:908:21: note: +4, including nesting penalty of 3, nesting level increased to 4
+  908 |                     if (sequence_length == 0)
+      |                     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:911:25: note: +1
+  911 |                         goto fail;
+      |                         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:916:21: note: +1
+  916 |                     goto fail;
+      |                     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:934:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  934 |     if (output != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:940:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  940 |     if (input_pointer != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1492:19: warning: function 'parse_array' has cognitive complexity of 26 (threshold 25) [readability-function-cognitive-complexity]
+ 1492 | static cJSON_bool parse_array(cJSON * const item, parse_buffer * const input_buffer)
+      |                   ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1497:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1497 |     if (input_buffer->depth >= CJSON_NESTING_LIMIT)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1503:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1503 |     if (buffer_at_offset(input_buffer)[0] != '[')
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1506:9: note: +1
+ 1506 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1511:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1511 |     if (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == ']'))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1511:46: note: +1
+ 1511 |     if (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == ']'))
+      |                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1514:9: note: +1
+ 1514 |         goto success;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1518:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1518 |     if (cannot_access_at_index(input_buffer, 0))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1518:9: note: +1
+ 1518 |     if (cannot_access_at_index(input_buffer, 0))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1521:9: note: +1
+ 1521 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1527:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1527 |     do
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1531:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1531 |         if (new_item == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1533:13: note: +1
+ 1533 |             goto fail; /* allocation failure */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1537:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1537 |         if (head == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1542:9: note: +1, nesting level increased to 2
+ 1542 |         else
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1553:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1553 |         if (!parse_value(current_item, input_buffer))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1555:13: note: +1
+ 1555 |             goto fail; /* failed to parse value */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1559:49: note: +1
+ 1559 |     while (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == ','));
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1561:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1561 |     if (cannot_access_at_index(input_buffer, 0) || buffer_at_offset(input_buffer)[0] != ']')
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1561:49: note: +1
+ 1561 |     if (cannot_access_at_index(input_buffer, 0) || buffer_at_offset(input_buffer)[0] != ']')
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1561:9: note: +1
+ 1561 |     if (cannot_access_at_index(input_buffer, 0) || buffer_at_offset(input_buffer)[0] != ']')
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1563:9: note: +1
+ 1563 |         goto fail; /* expected end of array */
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1569:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1569 |     if (head != NULL) {
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1581:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1581 |     if (head != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1657:19: warning: function 'parse_object' has cognitive complexity of 40 (threshold 25) [readability-function-cognitive-complexity]
+ 1657 | static cJSON_bool parse_object(cJSON * const item, parse_buffer * const input_buffer)
+      |                   ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1662:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1662 |     if (input_buffer->depth >= CJSON_NESTING_LIMIT)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1668:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1668 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '{'))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1668:49: note: +1
+ 1668 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '{'))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1668:9: note: +1
+ 1668 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '{'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1670:9: note: +1
+ 1670 |         goto fail; /* not an object */
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1675:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1675 |     if (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == '}'))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1675:46: note: +1
+ 1675 |     if (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == '}'))
+      |                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1677:9: note: +1
+ 1677 |         goto success; /* empty object */
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1681:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1681 |     if (cannot_access_at_index(input_buffer, 0))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1681:9: note: +1
+ 1681 |     if (cannot_access_at_index(input_buffer, 0))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1684:9: note: +1
+ 1684 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1690:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1690 |     do
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1694:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1694 |         if (new_item == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1696:13: note: +1
+ 1696 |             goto fail; /* allocation failure */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1700:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1700 |         if (head == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1705:9: note: +1, nesting level increased to 2
+ 1705 |         else
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1713:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1713 |         if (cannot_access_at_index(input_buffer, 1))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1713:13: note: +1
+ 1713 |         if (cannot_access_at_index(input_buffer, 1))
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1715:13: note: +1
+ 1715 |             goto fail; /* nothing comes after the comma */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1721:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1721 |         if (!parse_string(current_item, input_buffer))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1723:13: note: +1
+ 1723 |             goto fail; /* failed to parse name */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1731:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1731 |         if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != ':'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1731:53: note: +1
+ 1731 |         if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != ':'))
+      |                                                     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1731:13: note: +1
+ 1731 |         if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != ':'))
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1733:13: note: +1
+ 1733 |             goto fail; /* invalid object */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1739:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1739 |         if (!parse_value(current_item, input_buffer))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1741:13: note: +1
+ 1741 |             goto fail; /* failed to parse value */
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1745:49: note: +1
+ 1745 |     while (can_access_at_index(input_buffer, 0) && (buffer_at_offset(input_buffer)[0] == ','));
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1747:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1747 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '}'))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1747:49: note: +1
+ 1747 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '}'))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1747:9: note: +1
+ 1747 |     if (cannot_access_at_index(input_buffer, 0) || (buffer_at_offset(input_buffer)[0] != '}'))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:302:49: note: expanded from macro 'cannot_access_at_index'
+  302 | #define cannot_access_at_index(buffer, index) (!can_access_at_index(buffer, index))
+      |                                                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:301:62: note: expanded from macro 'can_access_at_index'
+  301 | #define can_access_at_index(buffer, index) ((buffer != NULL) && (((buffer)->offset + index) < (buffer)->length))
+      |                                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1749:9: note: +1
+ 1749 |         goto fail; /* expected end of object */
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1755:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1755 |     if (head != NULL) {
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1766:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1766 |     if (head != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1775:19: warning: function 'print_object' has cognitive complexity of 39 (threshold 25) [readability-function-cognitive-complexity]
+ 1775 | static cJSON_bool print_object(const cJSON * const item, printbuffer * const output_buffer)
+      |                   ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1781:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1781 |     if (output_buffer == NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1786:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1786 |     if (output_buffer->depth >= CJSON_NESTING_LIMIT)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1792:46: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1792 |     length = (size_t) (output_buffer->format ? 2 : 1); /* fmt: {\n */
+      |                                              ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1794:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1794 |     if (output_pointer == NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1801:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1801 |     if (output_buffer->format)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1807:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1807 |     while (current_item)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1809:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1809 |         if (output_buffer->format)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1813:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1813 |             if (output_pointer == NULL)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1817:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1817 |             for (i = 0; i < output_buffer->depth; i++)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1825:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1825 |         if (!print_string_ptr((unsigned char*)current_item->string, output_buffer))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1831:50: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1831 |         length = (size_t) (output_buffer->format ? 2 : 1);
+      |                                                  ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1833:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1833 |         if (output_pointer == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1838:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1838 |         if (output_buffer->format)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1845:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1845 |         if (!print_value(current_item, output_buffer))
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1852:50: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1852 |         length = ((size_t)(output_buffer->format ? 1 : 0) + (size_t)(current_item->next ? 1 : 0));
+      |                                                  ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1852:89: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1852 |         length = ((size_t)(output_buffer->format ? 1 : 0) + (size_t)(current_item->next ? 1 : 0));
+      |                                                                                         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1854:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1854 |         if (output_pointer == NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1858:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1858 |         if (current_item->next)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1863:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1863 |         if (output_buffer->format)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1873:66: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1873 |     output_pointer = ensure(output_buffer, output_buffer->format ? (output_buffer->depth + 1) : 2);
+      |                                                                  ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1874:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1874 |     if (output_pointer == NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1878:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1878 |     if (output_buffer->format)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:1881:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1881 |         for (i = 0; i < (output_buffer->depth - 1); i++)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2784:9: warning: function 'cJSON_Duplicate_rec' has cognitive complexity of 28 (threshold 25) [readability-function-cognitive-complexity]
+ 2784 | cJSON * cJSON_Duplicate_rec(const cJSON *item, size_t depth, cJSON_bool recurse)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2792:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2792 |     if (!item)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2794:9: note: +1
+ 2794 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2798:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2798 |     if (!newitem)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2800:9: note: +1
+ 2800 |         goto fail;
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2806:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2806 |     if (item->valuestring)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2809:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2809 |         if (!newitem->valuestring)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2811:13: note: +1
+ 2811 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2814:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2814 |     if (item->string)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2816:60: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2816 |         newitem->string = (item->type&cJSON_StringIsConst) ? item->string : (char*)cJSON_strdup((unsigned char*)item->string, &global_hooks);
+      |                                                            ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2817:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2817 |         if (!newitem->string)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2819:13: note: +1
+ 2819 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2823:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2823 |     if (!recurse)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2829:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2829 |     while (child != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2831:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2831 |         if(depth >= CJSON_CIRCULAR_LIMIT) {
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2832:13: note: +1
+ 2832 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2835:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2835 |         if (!newchild)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2837:13: note: +1
+ 2837 |             goto fail;
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2839:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2839 |         if (next != NULL)
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2846:9: note: +1, nesting level increased to 2
+ 2846 |         else
+      |         ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2854:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2854 |     if (newitem && newitem->child)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2854:17: note: +1
+ 2854 |     if (newitem && newitem->child)
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:2862:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2862 |     if (newitem != NULL)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3067:26: warning: function 'cJSON_Compare' has cognitive complexity of 42 (threshold 25) [readability-function-cognitive-complexity]
+ 3067 | CJSON_PUBLIC(cJSON_bool) cJSON_Compare(const cJSON * const a, const cJSON * const b, const cJSON_bool case_sensitive)
+      |                          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3069:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 3069 |     if ((a == NULL) || (b == NULL) || ((a->type & 0xFF) != (b->type & 0xFF)))
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3069:36: note: +1
+ 3069 |     if ((a == NULL) || (b == NULL) || ((a->type & 0xFF) != (b->type & 0xFF)))
+      |                                    ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3075:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 3075 |     switch (a->type & 0xFF)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3092:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 3092 |     if (a == b)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3097:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 3097 |     switch (a->type & 0xFF)
+      |     ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3106:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3106 |             if (compare_double(a->valuedouble, b->valuedouble))
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3114:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3114 |             if ((a->valuestring == NULL) || (b->valuestring == NULL))
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3114:42: note: +1
+ 3114 |             if ((a->valuestring == NULL) || (b->valuestring == NULL))
+      |                                          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3118:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3118 |             if (strcmp(a->valuestring, b->valuestring) == 0)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3130:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3130 |             for (; (a_element != NULL) && (b_element != NULL);)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3130:40: note: +1
+ 3130 |             for (; (a_element != NULL) && (b_element != NULL);)
+      |                                        ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3132:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3132 |                 if (!cJSON_Compare(a_element, b_element, case_sensitive))
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3142:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3142 |             if (a_element != b_element) {
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3153:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3153 |             cJSON_ArrayForEach(a_element, a)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.h:296:44: note: expanded from macro 'cJSON_ArrayForEach'
+  296 | #define cJSON_ArrayForEach(element, array) for(element = (array != NULL) ? (array)->child : NULL; element != NULL; element = element->next)
+      |                                            ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3153:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3153 |             cJSON_ArrayForEach(a_element, a)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.h:296:74: note: expanded from macro 'cJSON_ArrayForEach'
+  296 | #define cJSON_ArrayForEach(element, array) for(element = (array != NULL) ? (array)->child : NULL; element != NULL; element = element->next)
+      |                                                                          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3157:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3157 |                 if (b_element == NULL)
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3162:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3162 |                 if (!cJSON_Compare(a_element, b_element, case_sensitive))
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3170:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 3170 |             cJSON_ArrayForEach(b_element, b)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.h:296:44: note: expanded from macro 'cJSON_ArrayForEach'
+  296 | #define cJSON_ArrayForEach(element, array) for(element = (array != NULL) ? (array)->child : NULL; element != NULL; element = element->next)
+      |                                            ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3170:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3170 |             cJSON_ArrayForEach(b_element, b)
+      |             ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.h:296:74: note: expanded from macro 'cJSON_ArrayForEach'
+  296 | #define cJSON_ArrayForEach(element, array) for(element = (array != NULL) ? (array)->child : NULL; element != NULL; element = element->next)
+      |                                                                          ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3173:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3173 |                 if (a_element == NULL)
+      |                 ^
+D:/Projects/Metrics_derived/c/cJSON/cJSON.c:3178:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 3178 |                 if (!cJSON_Compare(b_element, a_element, case_sensitive))
+      |                 ^
+7 warnings generated.

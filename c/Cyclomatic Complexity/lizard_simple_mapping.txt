@@ -1,0 +1,132 @@
+lizard notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+lizard default output
+```text
+================================================
+  NLOC    CCN   token  PARAM  length  location
+------------------------------------------------
+      83     26    728      2     102 parse_number@307-408@.\cJSON.c
+      84     17    757      2     119 utf16_literal_to_utf8@698-816@.\cJSON.c
+     104     24    896      2     128 parse_string@819-946@.\cJSON.c
+     101     26    878      2     120 print_string_ptr@949-1068@.\cJSON.c
+      43     19    351      2      53 parse_value@1363-1415@.\cJSON.c
+      61     16    537      3      72 print_value@1418-1489@.\cJSON.c
+      88     20    785      3     116 parse_object@1657-1772@.\cJSON.c
+     100     24    894      4     117 print_object@1775-1891@.\cJSON.c
+      74     16    705      3      85 cJSON_Duplicate_rec@2784-2868@.\cJSON.c
+      99     33    885      2     124 cJSON_Compare@3067-3190@.\cJSON.c
+...
+===============================================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt
+------------------------------------------------------------------------------------------
+     10921      17.6     3.5       95.5       554           24
+```
+
+This file shows which metrics from the output of
+lizard_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- lizard default output
+
+
+Final classification
+--------------------
+1. Control Flow Testing
+2. Decision Coverage
+3. Condition Coverage
+4. Path Coverage
+5. Maintainability Analysis
+6. Test Prioritization
+
+
+Mapping
+-------
+
+Control Flow Testing
+- maps to these notebook output metrics:
+  - lizard default output -> per-function CCN and function locations
+- final mapping:
+  - Control Flow Testing = Available from lizard notebook output
+
+
+Decision Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Decision Coverage = Not available from lizard notebook output
+
+
+Condition Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Condition Coverage = Not available from lizard notebook output
+
+
+Path Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Path Coverage = Not available from lizard notebook output
+
+
+Maintainability Analysis
+- maps to these notebook output metrics:
+  - lizard default output -> per-function CCN values
+  - lizard default output -> NLOC, token, PARAM, length
+  - lizard default output -> overall summary values such as Total nloc, AvgCCN, Fun Cnt, Warning cnt
+- final mapping:
+  - Maintainability Analysis = Available from lizard notebook output
+
+
+Test Prioritization
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Test Prioritization = Not available from lizard notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- lizard default output = function-level complexity and size metrics for cJSON
+- highest observed CCN in current run = cJSON_Compare with score 33
+- lizard default output = overall project summary with 554 functions and 24 warnings
+
+
+Final classification result
+---------------------------
+- Control Flow Testing = Available
+- Decision Coverage = N/A
+- Condition Coverage = N/A
+- Path Coverage = N/A
+- Maintainability Analysis = Available
+- Test Prioritization = N/A
+
+
+Short version
+-------------
+- Control Flow Testing -> lizard CCN and function locations give control-flow hotspot visibility
+- Decision Coverage -> not available
+- Condition Coverage -> not available
+- Path Coverage -> not available
+- Maintainability Analysis -> lizard CCN / NLOC / token / PARAM / length / summary metrics
+- Test Prioritization -> not available
+
+
+Not covered by lizard
+---------------------
+- Decision Coverage -> not available from lizard notebook output
+- Condition Coverage -> not available from lizard notebook output
+- Path Coverage -> not available from lizard notebook output
+- Test Prioritization -> not available from lizard notebook output
+
+
+Parameters from output used for mapping
+---------------------------------------
+- lizard default output -> NLOC, CCN, token, PARAM, length, location
+- lizard default output -> Total nloc, Avg.NLOC, AvgCCN, Avg.token, Fun Cnt, Warning cnt

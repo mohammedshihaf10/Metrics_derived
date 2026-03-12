@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "total_commits": 1109,
+    "total_files_touched": 250,
+    "total_file_modifications": 1785
+  },
+  "top_files": [
+    {
+      "path": "cJSON.c",
+      "commit_count": 444,
+      "added_lines": 8160,
+      "deleted_lines": 4457,
+      "total_churn": 12617,
+      "last_commit": "5cc0e39f42dfe28cb8541f95fa2c513f0d550210"
+    },
+    {
+      "path": "cJSON_Utils.c",
+      "commit_count": 144,
+      "added_lines": 2773,
+      "deleted_lines": 1297,
+      "total_churn": 4070,
+      "last_commit": "74e1ff4994aa4139126967f6d289b675b4b36fef"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "commit_count": 143,
+      "added_lines": 624,
+      "deleted_lines": 345,
+      "total_churn": 969,
+      "last_commit": "a29814f285cc531c00223743ad3c55cd38c0dc56"
+    },
+    {
+      "path": "cJSON.h",
+      "commit_count": 142,
+      "added_lines": 788,
+      "deleted_lines": 355,
+      "total_churn": 1143,
+      "last_commit": "c859b25da02955fef659d658b8f324b5cde87be3"
+    },
+    {
+      "path": "Makefile",
+      "commit_count": 82,
+      "added_lines": 301,
+      "deleted_lines": 138,
+      "total_churn": 439,
+      "last_commit": "c859b25da02955fef659d658b8f324b5cde87be3"
+    },
+    {
+      "path": "README.md",
+      "commit_count": 65,
+      "added_lines": 1350,
+      "deleted_lines": 697,
+      "total_churn": 2047,
+      "last_commit": "543c28869e4b215522635b7270b4b7cbb43030af"
+    },
+    {
+      "path": "tests\\CMakeLists.txt",
+      "commit_count": 41,
+      "added_lines": 147,
+      "deleted_lines": 27,
+      "total_churn": 174,
+      "last_commit": "424ce4ce9668f288fb4ab665775546d3ed709e96"
+    },
+    {
+      "path": "tests\\misc_tests.c",
+      "commit_count": 37,
+      "added_lines": 920,
+      "deleted_lines": 84,
+      "total_churn": 1004,
+      "last_commit": "a328d65ad490b64da8c87523cbbfe16050ba5bf6"
+    },
+    {
+      "path": "test.c",
+      "commit_count": 36,
+      "added_lines": 865,
+      "deleted_lines": 441,
+      "total_churn": 1306,
+      "last_commit": "f32703a7a1990b6b7c97d14a8ef6818badd2d835"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "commit_count": 36,
+      "added_lines": 650,
+      "deleted_lines": 166,
+      "total_churn": 816,
+      "last_commit": "c859b25da02955fef659d658b8f324b5cde87be3"
+    }
+  ]
+}

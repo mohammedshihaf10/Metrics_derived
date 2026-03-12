@@ -1,0 +1,478 @@
+{
+  "definitions_total": 1015,
+  "definitions_covered": 931,
+  "definitions_with_covered_use": 839,
+  "definition_use_pairs_total": 6428,
+  "definition_use_pairs": [
+    {
+      "name": "i",
+      "def_line": 313,
+      "use_line": 325
+    },
+    {
+      "name": "i",
+      "def_line": 313,
+      "use_line": 327
+    },
+    {
+      "name": "i",
+      "def_line": 313,
+      "use_line": 368
+    },
+    {
+      "name": "i",
+      "def_line": 313,
+      "use_line": 370
+    },
+    {
+      "name": "i",
+      "def_line": 313,
+      "use_line": 373
+    },
+    {
+      "name": "allocation_length",
+      "def_line": 834,
+      "use_line": 857
+    },
+    {
+      "name": "allocation_length",
+      "def_line": 834,
+      "use_line": 858
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 357
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 358
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 363
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 364
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 370
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 373
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 378
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 379
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 404
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "use_line": 406
+    },
+    {
+      "name": "i",
+      "def_line": 596,
+      "use_line": 643
+    },
+    {
+      "name": "i",
+      "def_line": 596,
+      "use_line": 645
+    },
+    {
+      "name": "i",
+      "def_line": 596,
+      "use_line": 647
+    }
+  ],
+  "uncovered_definitions": [
+    {
+      "name": "const",
+      "def_line": 2001
+    },
+    {
+      "name": "NULL",
+      "def_line": 2082
+    },
+    {
+      "name": "struct",
+      "def_line": 1657
+    },
+    {
+      "name": "if",
+      "def_line": 1629
+    },
+    {
+      "name": "return",
+      "def_line": 2210
+    },
+    {
+      "name": "NULL",
+      "def_line": 1518
+    },
+    {
+      "name": "raw_length",
+      "def_line": 1461
+    },
+    {
+      "name": "length",
+      "def_line": 1593
+    },
+    {
+      "name": "struct",
+      "def_line": 2241
+    },
+    {
+      "name": "item",
+      "def_line": 2528
+    },
+    {
+      "name": "add_item_to_object",
+      "def_line": 2142
+    },
+    {
+      "name": "int",
+      "def_line": 2184
+    },
+    {
+      "name": "while",
+      "def_line": 1745
+    },
+    {
+      "name": "if",
+      "def_line": 2148
+    },
+    {
+      "name": "return",
+      "def_line": 1876
+    },
+    {
+      "name": "int",
+      "def_line": 1071
+    },
+    {
+      "name": "long",
+      "def_line": 835
+    },
+    {
+      "name": "return",
+      "def_line": 407
+    },
+    {
+      "name": "child",
+      "def_line": 2024
+    },
+    {
+      "name": "reference",
+      "def_line": 2003
+    }
+  ],
+  "definitions": [
+    {
+      "name": "i",
+      "def_line": 313,
+      "covered_definition": true,
+      "covered_use_lines": [
+        313,
+        325,
+        327,
+        368,
+        370,
+        373
+      ]
+    },
+    {
+      "name": "allocation_length",
+      "def_line": 834,
+      "covered_definition": true,
+      "covered_use_lines": [
+        834,
+        857,
+        858
+      ]
+    },
+    {
+      "name": "number_c_string",
+      "def_line": 311,
+      "covered_definition": false,
+      "covered_use_lines": [
+        357,
+        358,
+        363,
+        364,
+        370,
+        373,
+        378,
+        379,
+        404,
+        406
+      ]
+    },
+    {
+      "name": "i",
+      "def_line": 596,
+      "covered_definition": true,
+      "covered_use_lines": [
+        596,
+        643,
+        645,
+        647,
+        651,
+        653
+      ]
+    },
+    {
+      "name": "newbuffer",
+      "def_line": 487,
+      "covered_definition": true,
+      "covered_use_lines": [
+        487,
+        538,
+        539,
+        565,
+        567
+      ]
+    },
+    {
+      "name": "copy",
+      "def_line": 432,
+      "covered_definition": true,
+      "covered_use_lines": [
+        432,
+        459,
+        460,
+        468,
+        470
+      ]
+    },
+    {
+      "name": "test",
+      "def_line": 599,
+      "covered_definition": true,
+      "covered_use_lines": [
+        599,
+        621
+      ]
+    },
+    {
+      "name": "buffer_pointer",
+      "def_line": 573,
+      "covered_definition": true,
+      "covered_use_lines": [
+        573,
+        578,
+        580
+      ]
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "covered_definition": true,
+      "covered_use_lines": [
+        595,
+        609,
+        613,
+        618,
+        624,
+        629,
+        635,
+        643,
+        655
+      ]
+    },
+    {
+      "name": "first_code",
+      "def_line": 701,
+      "covered_definition": true,
+      "covered_use_lines": [
+        701,
+        715,
+        718,
+        724,
+        753,
+        758
+      ]
+    },
+    {
+      "name": "skipped_bytes",
+      "def_line": 835,
+      "covered_definition": true,
+      "covered_use_lines": [
+        835,
+        846,
+        857
+      ]
+    },
+    {
+      "name": "sequence_length",
+      "def_line": 876,
+      "covered_definition": true,
+      "covered_use_lines": [
+        876,
+        907,
+        908,
+        918
+      ]
+    },
+    {
+      "name": "input_pointer",
+      "def_line": 951,
+      "covered_definition": true,
+      "covered_use_lines": [
+        951,
+        977,
+        979,
+        992,
+        1000,
+        1022,
+        1024,
+        1027,
+        1033,
+        1058
+      ]
+    },
+    {
+      "name": "decimal_point",
+      "def_line": 312,
+      "covered_definition": true,
+      "covered_use_lines": [
+        312,
+        373
+      ]
+    },
+    {
+      "name": "first_sequence",
+      "def_line": 702,
+      "covered_definition": true,
+      "covered_use_lines": [
+        702,
+        708,
+        715,
+        726
+      ]
+    },
+    {
+      "name": "number",
+      "def_line": 309,
+      "covered_definition": true,
+      "covered_use_lines": [
+        309,
+        378,
+        386,
+        389,
+        393,
+        399
+      ]
+    },
+    {
+      "name": "second_sequence",
+      "def_line": 726,
+      "covered_definition": true,
+      "covered_use_lines": [
+        726,
+        730,
+        736,
+        743
+      ]
+    },
+    {
+      "name": "escape_characters",
+      "def_line": 956,
+      "covered_definition": true,
+      "covered_use_lines": [
+        956,
+        989,
+        995,
+        1000,
+        1009
+      ]
+    },
+    {
+      "name": "maxVal",
+      "def_line": 586,
+      "covered_definition": true,
+      "covered_use_lines": [
+        586,
+        587
+      ]
+    },
+    {
+      "name": "i",
+      "def_line": 664,
+      "covered_definition": true,
+      "covered_use_lines": [
+        664,
+        666,
+        669,
+        671,
+        673,
+        675,
+        677,
+        679,
+        686
+      ]
+    }
+  ],
+  "covered_lines_sample": [
+    94,
+    96,
+    99,
+    101,
+    103,
+    106,
+    109,
+    111,
+    113,
+    116,
+    124,
+    127,
+    129,
+    133,
+    135,
+    137,
+    140,
+    145,
+    147,
+    149,
+    153,
+    188,
+    190,
+    191,
+    193,
+    195,
+    198,
+    199,
+    200,
+    204,
+    206,
+    209,
+    211,
+    214,
+    215,
+    216,
+    217,
+    220,
+    221,
+    223
+  ]
+}

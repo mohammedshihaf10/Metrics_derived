@@ -1,0 +1,123 @@
+jscpd notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+jscpd summary output
+```text
+Format    Files analyzed  Total lines  Total tokens  Clones found  Duplicated lines  Duplicated tokens
+c         74              10541        61742         36            2899 (27.5%)      11573 (18.74%)
+c-header  17              2299         8979          0             0 (0%)            0 (0%)
+Total     91              12840        70721         36            2899 (22.58%)     11573 (16.36%)
+```
+
+This file shows which metrics from the output of
+jscpd_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- jscpd summary output
+- jscpd console clone matches
+
+
+Final classification
+--------------------
+1. Maintainability Testing
+2. Defect Propagation Risk Detection
+3. Refactoring Identification
+4. Code Quality Assessment
+5. Test Maintenance Reduction (partial)
+6. Refactoring Opportunity Detection
+7. Risk-based testing prioritization (partial)
+
+
+Mapping
+-------
+
+Maintainability Testing
+- maps to these notebook output metrics:
+  - jscpd summary output -> duplicated lines, duplicated tokens, duplication percentage
+- final mapping:
+  - Maintainability Testing = Available from jscpd notebook output
+
+
+Defect Propagation Risk Detection
+- maps to these notebook output metrics:
+  - jscpd console output -> clone pairs and duplicate locations
+  - jscpd summary output -> clones found
+- final mapping:
+  - Defect Propagation Risk Detection = Available from jscpd notebook output
+
+
+Refactoring Identification
+- maps to these notebook output metrics:
+  - jscpd console output -> exact clone blocks and file locations
+- final mapping:
+  - Refactoring Identification = Available from jscpd notebook output
+
+
+Code Quality Assessment
+- maps to these notebook output metrics:
+  - jscpd summary output -> duplication percentages
+- final mapping:
+  - Code Quality Assessment = Available from jscpd notebook output
+
+
+Test Maintenance Reduction (partial)
+- maps to these notebook output metrics:
+  - jscpd console output -> repeated test logic and duplicated test files
+- final mapping:
+  - Test Maintenance Reduction (partial) = Available from jscpd notebook output
+
+
+Refactoring Opportunity Detection
+- maps to these notebook output metrics:
+  - jscpd console output -> repeated code blocks that can be consolidated
+- final mapping:
+  - Refactoring Opportunity Detection = Available from jscpd notebook output
+
+
+Risk-based testing prioritization (partial)
+- maps to these notebook output metrics:
+  - jscpd summary output -> duplication hotspots
+  - jscpd console output -> heavily duplicated files
+- final mapping:
+  - Risk-based testing prioritization (partial) = Available from jscpd notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- total files analyzed = 91
+- clones found = 36
+- duplicated lines = 2899 (22.58%)
+- duplicated tokens = 11573 (16.36%)
+- large duplicate regions appear in tests and bundled Unity example files
+
+
+Final classification result
+---------------------------
+- Maintainability Testing = Available
+- Defect Propagation Risk Detection = Available
+- Refactoring Identification = Available
+- Code Quality Assessment = Available
+- Test Maintenance Reduction (partial) = Available
+- Refactoring Opportunity Detection = Available
+- Risk-based testing prioritization (partial) = Available
+
+
+Short version
+-------------
+- Maintainability Testing -> duplicate-line and duplicate-token percentages
+- Defect Propagation Risk Detection -> clone pairs can spread repeated defects
+- Refactoring Identification -> exact clone blocks are reported
+- Code Quality Assessment -> duplication percentages
+- Test Maintenance Reduction (partial) -> repeated test code is visible
+- Refactoring Opportunity Detection -> duplicate blocks indicate consolidation targets
+- Risk-based testing prioritization (partial) -> highly duplicated areas need extra attention
+
+
+Parameters from output used for mapping
+---------------------------------------
+- jscpd summary output -> files analyzed, total lines, total tokens, clones found, duplicated lines, duplicated tokens
+- jscpd console output -> duplicate file pairs, duplicate line ranges, token counts

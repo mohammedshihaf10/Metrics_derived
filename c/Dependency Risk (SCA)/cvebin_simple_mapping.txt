@@ -1,0 +1,128 @@
+cve-bin-tool notebook output to classification mapping
+=====================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+cve-bin-tool current run state
+```text
+Local tool installation completed in tools/cve-bin-tool/site-packages.
+The scan runner reaches cve-bin-tool successfully.
+Current scan is blocked by external CVE data-source download and DNS access.
+No final JSON vulnerability report has been produced yet for cJSON.
+```
+
+This file shows which metrics from the output of
+cvebin_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- cve-bin-tool install output
+- cve-bin-tool runtime logs
+
+
+Final classification
+--------------------
+1. Vulnerability dependency detection
+2. Outdated dependency detection
+3. Transitive dependency analysis
+4. License compliance testing
+5. Supply chain security analysis
+6. Dependency health monitoring
+7. Risk Prioritization
+8. Continuous dependency monitoring
+
+
+Mapping
+-------
+
+Vulnerability dependency detection
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> vendor, product, version, cve_number, severity
+- final mapping:
+  - Vulnerability dependency detection = Pending successful cve-bin-tool scan
+
+
+Outdated dependency detection
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> product and version information
+- final mapping:
+  - Outdated dependency detection = Pending successful cve-bin-tool scan
+
+
+Transitive dependency analysis
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> discovered components
+- final mapping:
+  - Transitive dependency analysis = Pending successful cve-bin-tool scan
+
+
+License compliance testing
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - License compliance testing = Not available from current cve-bin-tool output
+
+
+Supply chain security analysis
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> vulnerable products and severities
+- final mapping:
+  - Supply chain security analysis = Pending successful cve-bin-tool scan
+
+
+Dependency health monitoring
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> repeated vulnerability scan results over time
+- final mapping:
+  - Dependency health monitoring = Pending successful cve-bin-tool scan
+
+
+Risk Prioritization
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> severity values
+- final mapping:
+  - Risk Prioritization = Pending successful cve-bin-tool scan
+
+
+Continuous dependency monitoring
+- maps to these notebook output metrics:
+  - cve-bin-tool output -> recurring scan reports
+- final mapping:
+  - Continuous dependency monitoring = Pending successful cve-bin-tool scan
+
+
+Current result from your notebook output
+----------------------------------------
+- local isolated tool install = Available
+- local cache redirection inside the folder = Available
+- final vulnerability report for cJSON = not produced yet because external data download failed
+
+
+Final classification result
+---------------------------
+- Vulnerability dependency detection = Pending
+- Outdated dependency detection = Pending
+- Transitive dependency analysis = Pending
+- License compliance testing = N/A
+- Supply chain security analysis = Pending
+- Dependency health monitoring = Pending
+- Risk Prioritization = Pending
+- Continuous dependency monitoring = Pending
+
+
+Short version
+-------------
+- Vulnerability dependency detection -> pending successful scan
+- Outdated dependency detection -> pending successful scan
+- Transitive dependency analysis -> pending successful scan
+- License compliance testing -> not available
+- Supply chain security analysis -> pending successful scan
+- Dependency health monitoring -> pending successful scan
+- Risk Prioritization -> pending successful scan
+- Continuous dependency monitoring -> pending successful scan
+
+
+Parameters from output used for mapping
+---------------------------------------
+- cve-bin-tool output -> vendor, product, version, cve_number, severity, remarks, components

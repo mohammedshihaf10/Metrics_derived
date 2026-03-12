@@ -1,0 +1,56 @@
+System.IO.IOException: The process cannot access the file 'D:\Projects\sample repo\C\AltCover.Recorder.g.dll' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access)
+   at AltCover.Instrument.I.writeAssembly(AssemblyDefinition assembly, String path) in /_//AltCover.Engine/Instrument.fs:line 509
+   at AltCover.Instrument.I.writeAssemblies(AssemblyDefinition definition, String file, IEnumerable`1 targets, FSharpFunc`2 sink) in /_//AltCover.Engine/Instrument.fs:line 868
+   at AltCover.Instrument.I.finishVisit(InstrumentContext state) in /_//AltCover.Engine/Instrument.fs:line 1379
+   at AltCover.Instrument.I.instrumentationVisitorCore(InstrumentContext state, Node node) in /_//AltCover.Engine/Instrument.fs:line 1446
+   at AltCover.Instrument.I.instrumentationVisitor@1471.Invoke(InstrumentContext state, Node node)
+   at AltCover.Instrument.I.instrumentationVisitorWrapper(FSharpFunc`2 core, InstrumentContext state, Node node) in /_//AltCover.Engine/Instrument.fs:line 1454
+   at AltCover.Instrument.I.instrumentationVisitor(InstrumentContext state, Node node) in /_//AltCover.Engine/Instrument.fs:line 1471
+   at AltCover.Main.I.visitors@776.Invoke(InstrumentContext state, Node node)
+   at AltCover.Visitor.stateful@1659-1.Invoke(T node) in /_//AltCover.Engine/Visitor.fs:line 1661
+   at Microsoft.FSharp.Primitives.Basics.List.mapToFreshConsTail[a,b](FSharpList`1 cons, FSharpFunc`2 f, FSharpList`1 x) in D:\a\_work\1\s\src\FSharp.Core\local.fs:line 236
+   at Microsoft.FSharp.Primitives.Basics.List.map[T,TResult](FSharpFunc`2 mapping, FSharpList`1 x) in D:\a\_work\1\s\src\FSharp.Core\local.fs:line 246
+   at Microsoft.FSharp.Collections.ListModule.Map[T,TResult](FSharpFunc`2 mapping, FSharpList`1 list) in D:\a\_work\1\s\src\FSharp.Core\list.fs:line 97
+   at AltCover.Visitor.visit@1648.Invoke(FSharpList`1 visitors, Node node)
+   at Microsoft.FSharp.Collections.SeqModule.Fold[T,TState](FSharpFunc`2 folder, TState state, IEnumerable`1 source) in D:\a\_work\1\s\src\FSharp.Core\seq.fs:line 913
+   at AltCover.Visitor.visit(IEnumerable`1 visitors, IEnumerable`1 assemblies) in /_//AltCover.Engine/Visitor.fs:line 1646
+   at AltCover.Main.I.result@756.Invoke(Unit unitVar0) in /_//AltCover.Engine/Main.fs:line 778
+   at AltCover.PathOperation.DoPathOperation[TAny](FSharpFunc`2 operation, FSharpFunc`2 handle) in /_//AltCover.Engine/Output.fs:line 21
+TargetSite = 
+Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.IO.FileOptions)
+Data = 
+seq []
+InnerException = 
+<null>
+HelpLink = 
+<null>
+Source = 
+"System.Private.CoreLib"
+HResult = 
+-2147024864
+System.UnauthorizedAccessException: Access to the path 'D:\Projects\sample repo\C' is denied.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenWrite(String path)
+   at AltCover.Zip.save(FSharpFunc`2 document, String report, Boolean zip) in /_//AltCover.Engine/CommandLine.fs:line 62
+   at AltCover.Main.I.result@756.Invoke(Unit unitVar0) in /_//AltCover.Engine/Main.fs:line 779
+   at AltCover.PathOperation.DoPathOperation[TAny](FSharpFunc`2 operation, FSharpFunc`2 handle) in /_//AltCover.Engine/Output.fs:line 21
+TargetSite = 
+Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.IO.FileOptions)
+Data = 
+seq []
+InnerException = 
+<null>
+HelpLink = 
+<null>
+Source = 
+"System.Private.CoreLib"
+HResult = 
+-2147024891

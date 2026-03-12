@@ -1,0 +1,126 @@
+cppcheck dump + lcov notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+all definition json output
+```json
+{
+  "definitions_total": 1035,
+  "definitions_covered": 949,
+  "definitions_with_covered_use": 888,
+  "definition_use_pairs_total": 7297,
+  "definition_use_pairs": [
+    {"name": "version", "def_line": 126, "use_line": 127},
+    {"name": "version", "def_line": 126, "use_line": 129},
+    {"name": "node", "def_line": 243, "use_line": 244},
+    {"name": "buffer_pointer", "def_line": 573, "use_line": 578}
+  ]
+}
+```
+
+This file shows which metrics from the output of
+all_definition_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- all definition json output
+
+
+Final classification
+--------------------
+1. Variable Definition Detection
+2. Coverage Measurement
+3. Reporting Validation
+4. Definition-Use Mapping
+5. Uncovered Definition Detection
+6. Edge Case Handling
+
+
+Mapping
+-------
+
+Variable Definition Detection
+- maps to these notebook output metrics:
+  - all definition json output -> definitions_total
+  - all definition json output -> definition_use_pairs with name and def_line
+- final mapping:
+  - Variable Definition Detection = Available from cppcheck dump + lcov notebook output
+
+
+Coverage Measurement
+- maps to these notebook output metrics:
+  - all definition json output -> definitions_covered
+  - all definition json output -> definitions_with_covered_use
+  - all definition json output -> definition_use_pairs_total
+- final mapping:
+  - Coverage Measurement = Available from cppcheck dump + lcov notebook output
+
+
+Reporting Validation
+- maps to these notebook output metrics:
+  - all definition json output -> structured json report
+  - all definition json output -> summary counts and pair list
+- final mapping:
+  - Reporting Validation = Available from cppcheck dump + lcov notebook output
+
+
+Definition-Use Mapping
+- maps to these notebook output metrics:
+  - all definition json output -> definition_use_pairs with def_line and use_line
+- final mapping:
+  - Definition-Use Mapping = Available from cppcheck dump + lcov notebook output
+
+
+Uncovered Definition Detection
+- maps to these notebook output metrics:
+  - all definition json output -> definitions_total versus definitions_covered
+  - all definition json output -> definitions_with_covered_use
+- final mapping:
+  - Uncovered Definition Detection = Available from cppcheck dump + lcov notebook output
+
+
+Edge Case Handling
+- maps to these notebook output metrics:
+  - all definition json output -> covered and uncovered definition counts in one report
+- final mapping:
+  - Edge Case Handling = Available from cppcheck dump + lcov notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- definitions_total = 1035
+- definitions_covered = 949
+- definitions_with_covered_use = 888
+- definition_use_pairs_total = 7297
+- sample definition-use pairs include version 126->127, version 126->129, node 243->244, buffer_pointer 573->578
+
+
+Final classification result
+---------------------------
+- Variable Definition Detection = Available
+- Coverage Measurement = Available
+- Reporting Validation = Available
+- Definition-Use Mapping = Available
+- Uncovered Definition Detection = Available
+- Edge Case Handling = Available
+
+
+Short version
+-------------
+- Variable Definition Detection -> definitions_total and named definitions
+- Coverage Measurement -> definitions_covered and definitions_with_covered_use
+- Reporting Validation -> structured json report
+- Definition-Use Mapping -> definition_use_pairs
+- Uncovered Definition Detection -> uncovered portion from total versus covered counts
+- Edge Case Handling -> covered and uncovered definitions appear in one report
+
+
+Parameters from output used for mapping
+---------------------------------------
+- all definition json output -> definitions_total
+- all definition json output -> definitions_covered
+- all definition json output -> definitions_with_covered_use
+- all definition json output -> definition_use_pairs_total
+- all definition json output -> definition_use_pairs

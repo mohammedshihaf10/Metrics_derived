@@ -1,0 +1,129 @@
+clang-tidy notebook output to classification mapping
+====================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+clang-tidy cognitive complexity output
+```text
+D:/Projects/sample repo/c/cJSON/cJSON.c:698:22: warning: function 'utf16_literal_to_utf8' has cognitive complexity of 28 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:819:19: warning: function 'parse_string' has cognitive complexity of 34 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:1492:19: warning: function 'parse_array' has cognitive complexity of 26 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:1657:19: warning: function 'parse_object' has cognitive complexity of 40 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:1775:19: warning: function 'print_object' has cognitive complexity of 39 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:2784:9: warning: function 'cJSON_Duplicate_rec' has cognitive complexity of 28 (threshold 25)
+D:/Projects/sample repo/c/cJSON/cJSON.c:3067:26: warning: function 'cJSON_Compare' has cognitive complexity of 42 (threshold 25)
+```
+
+This file shows which metrics from the output of
+clang_tidy_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- clang-tidy cognitive complexity output
+
+
+Final classification
+--------------------
+1. Code Understandability Analysis
+2. Maintainability Evaluation
+3. Testability Analysis
+4. Risk Detection
+5. Refactoring Guidance
+6. Code Review Support
+7. Testing Effort Prioritization
+
+
+Mapping
+-------
+
+Code Understandability Analysis
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> function names and cognitive complexity scores
+- final mapping:
+  - Code Understandability Analysis = Available from clang-tidy notebook output
+
+
+Maintainability Evaluation
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> complexity scores above threshold
+- final mapping:
+  - Maintainability Evaluation = Available from clang-tidy notebook output
+
+
+Testability Analysis
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> higher cognitive complexity functions
+- final mapping:
+  - Testability Analysis = Available from clang-tidy notebook output
+
+
+Risk Detection
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> warning entries with threshold exceedance
+- final mapping:
+  - Risk Detection = Available from clang-tidy notebook output
+
+
+Refactoring Guidance
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> exact function hotspots and line locations
+- final mapping:
+  - Refactoring Guidance = Available from clang-tidy notebook output
+
+
+Code Review Support
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> file, line, function, warning text
+- final mapping:
+  - Code Review Support = Available from clang-tidy notebook output
+
+
+Testing Effort Prioritization
+- maps to these notebook output metrics:
+  - clang-tidy cognitive complexity output -> functions can be ordered by complexity score
+- final mapping:
+  - Testing Effort Prioritization = Available from clang-tidy notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- 7 functions crossed the threshold of 25
+- cJSON_Compare = 42
+- parse_object = 40
+- print_object = 39
+- parse_string = 34
+- utf16_literal_to_utf8 = 28
+- cJSON_Duplicate_rec = 28
+- parse_array = 26
+
+
+Final classification result
+---------------------------
+- Code Understandability Analysis = Available
+- Maintainability Evaluation = Available
+- Testability Analysis = Available
+- Risk Detection = Available
+- Refactoring Guidance = Available
+- Code Review Support = Available
+- Testing Effort Prioritization = Available
+
+
+Short version
+-------------
+- Code Understandability Analysis -> cognitive complexity by function
+- Maintainability Evaluation -> threshold-crossing cognitive complexity warnings
+- Testability Analysis -> higher complexity implies harder testing effort
+- Risk Detection -> hotspot warnings above threshold
+- Refactoring Guidance -> exact function locations to simplify
+- Code Review Support -> file and line based warning format
+- Testing Effort Prioritization -> rank functions by cognitive complexity
+
+
+Parameters from output used for mapping
+---------------------------------------
+- clang-tidy cognitive complexity output -> function name
+- clang-tidy cognitive complexity output -> cognitive complexity score
+- clang-tidy cognitive complexity output -> threshold
+- clang-tidy cognitive complexity output -> file path
+- clang-tidy cognitive complexity output -> line

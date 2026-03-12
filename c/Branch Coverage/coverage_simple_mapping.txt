@@ -1,0 +1,119 @@
+coverage notebook output to classification mapping
+=================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+lcov branch summary output
+```text
+Summary coverage rate:
+  lines......: 82.1% (3412 of 4157 lines)
+  functions..: 92.0% (334 of 363 functions)
+  branches...: 53.1% (1285 of 2422 branches)
+```
+
+This file shows which metrics from the output of
+coverage_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- lcov branch summary output
+- branch_coverage.info
+
+
+Final classification
+--------------------
+1. Decision Outcome Verification
+2. Conditional Logic Testing
+3. Control flow validation
+4. Loop condition testing
+5. Edge case detection
+6. Logic Error detection
+7. Test case completeness
+
+
+Mapping
+-------
+
+Decision Outcome Verification
+- maps to these notebook output metrics:
+  - lcov branch summary output -> covered branches and total branches
+- final mapping:
+  - Decision Outcome Verification = Available from coverage notebook output
+
+
+Conditional Logic Testing
+- maps to these notebook output metrics:
+  - lcov branch summary output -> branch coverage percent
+- final mapping:
+  - Conditional Logic Testing = Available from coverage notebook output
+
+
+Control flow validation
+- maps to these notebook output metrics:
+  - lcov branch summary output -> branch counts
+- final mapping:
+  - Control flow validation = Available from coverage notebook output
+
+
+Loop condition testing
+- maps to these notebook output metrics:
+  - lcov branch summary output -> branch coverage values over control-flow decisions
+- final mapping:
+  - Loop condition testing = Available from coverage notebook output
+
+
+Edge case detection
+- maps to these notebook output metrics:
+  - lcov branch summary output -> uncovered branches
+- final mapping:
+  - Edge case detection = Available from coverage notebook output
+
+
+Logic Error detection
+- maps to these notebook output metrics:
+  - lcov branch summary output -> uncovered branches indicate untested logic alternatives
+- final mapping:
+  - Logic Error detection = Available from coverage notebook output
+
+
+Test case completeness
+- maps to these notebook output metrics:
+  - lcov branch summary output -> branch coverage percent
+- final mapping:
+  - Test case completeness = Available from coverage notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- branch coverage = 53.1% (1285 of 2422 branches)
+- line coverage in the same run = 82.1% (3412 of 4157 lines)
+- function coverage in the same run = 92.0% (334 of 363 functions)
+
+
+Final classification result
+---------------------------
+- Decision Outcome Verification = Available
+- Conditional Logic Testing = Available
+- Control flow validation = Available
+- Loop condition testing = Available
+- Edge case detection = Available
+- Logic Error detection = Available
+- Test case completeness = Available
+
+
+Short version
+-------------
+- Decision Outcome Verification -> branch counts and branch percent
+- Conditional Logic Testing -> branch coverage percent
+- Control flow validation -> branch execution evidence
+- Loop condition testing -> branch-based decision tracking
+- Edge case detection -> uncovered branches remain
+- Logic Error detection -> branch misses show untested logic alternatives
+- Test case completeness -> overall branch coverage percent
+
+
+Parameters from output used for mapping
+---------------------------------------
+- lcov branch summary output -> covered branches, total branches, branch coverage percent
+- lcov branch summary output -> covered lines, total lines, covered functions, total functions

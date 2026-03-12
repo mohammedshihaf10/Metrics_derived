@@ -1,0 +1,168 @@
+cppcheck dump + lcov notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+all uses json output
+```json
+{
+  "definitions_total": 1020,
+  "definition_use_pairs_total": 7159,
+  "covered_definition_use_pairs": 7159,
+  "c_use_pairs": 4978,
+  "p_use_pairs": 2181,
+  "definition_use_pairs": [
+    {"name": "version", "def_line": 126, "use_line": 127, "use_kind": "c-use"},
+    {"name": "input_buffer", "def_line": 1683, "use_line": 1713, "use_kind": "p-use"},
+    {"name": "input_buffer", "def_line": 1683, "use_line": 1719, "use_kind": "c-use"}
+  ]
+}
+```
+
+This file shows which metrics from the output of
+all_uses_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- all uses json output
+
+
+Final classification
+--------------------
+1. Variable definition detection
+2. Computational use detection (c-use)
+3. Predicate use detection (p-use)
+4. Multiple definitions handling
+5. Cross-function use detection
+6. Coverage reporting validation
+7. Definition-use pair identification
+8. Unreachable use detection
+9. All uses coverage verification
+10. Partial uses coverage detection
+
+
+Mapping
+-------
+
+Variable definition detection
+- maps to these notebook output metrics:
+  - all uses json output -> definitions_total
+  - all uses json output -> definition_use_pairs with name and def_line
+- final mapping:
+  - Variable definition detection = Available from cppcheck dump + lcov notebook output
+
+
+Computational use detection (c-use)
+- maps to these notebook output metrics:
+  - all uses json output -> c_use_pairs
+  - all uses json output -> definition_use_pairs with use_kind = c-use
+- final mapping:
+  - Computational use detection (c-use) = Available from cppcheck dump + lcov notebook output
+
+
+Predicate use detection (p-use)
+- maps to these notebook output metrics:
+  - all uses json output -> p_use_pairs
+  - all uses json output -> definition_use_pairs with use_kind = p-use
+- final mapping:
+  - Predicate use detection (p-use) = Available from cppcheck dump + lcov notebook output
+
+
+Multiple definitions handling
+- maps to these notebook output metrics:
+  - all uses json output -> repeated entries in definition_use_pairs for the same definition
+- final mapping:
+  - Multiple definitions handling = Available from cppcheck dump + lcov notebook output
+
+
+Cross-function use detection
+- maps to these notebook output metrics:
+  - all uses json output -> definition_use_pairs across the analyzed source
+- final mapping:
+  - Cross-function use detection = Available from cppcheck dump + lcov notebook output
+
+
+Coverage reporting validation
+- maps to these notebook output metrics:
+  - all uses json output -> structured json report
+  - all uses json output -> covered_definition_use_pairs
+- final mapping:
+  - Coverage reporting validation = Available from cppcheck dump + lcov notebook output
+
+
+Definition-use pair identification
+- maps to these notebook output metrics:
+  - all uses json output -> definition_use_pairs with def_line, use_line, use_kind
+- final mapping:
+  - Definition-use pair identification = Available from cppcheck dump + lcov notebook output
+
+
+Unreachable use detection
+- maps to these notebook output metrics:
+  - all uses json output -> covered_definition_use_pairs versus definition_use_pairs_total
+- final mapping:
+  - Unreachable use detection = Available from cppcheck dump + lcov notebook output
+
+
+All uses coverage verification
+- maps to these notebook output metrics:
+  - all uses json output -> covered_definition_use_pairs
+  - all uses json output -> definition_use_pairs_total
+- final mapping:
+  - All uses coverage verification = Available from cppcheck dump + lcov notebook output
+
+
+Partial uses coverage detection
+- maps to these notebook output metrics:
+  - all uses json output -> covered_definition_use_pairs versus definition_use_pairs_total
+- final mapping:
+  - Partial uses coverage detection = Available from cppcheck dump + lcov notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- definitions_total = 1020
+- definition_use_pairs_total = 7159
+- covered_definition_use_pairs = 7159
+- c_use_pairs = 4978
+- p_use_pairs = 2181
+- sample pairs include version 126->127 c-use, input_buffer 1683->1713 p-use, input_buffer 1683->1719 c-use
+
+
+Final classification result
+---------------------------
+- Variable definition detection = Available
+- Computational use detection (c-use) = Available
+- Predicate use detection (p-use) = Available
+- Multiple definitions handling = Available
+- Cross-function use detection = Available
+- Coverage reporting validation = Available
+- Definition-use pair identification = Available
+- Unreachable use detection = Available
+- All uses coverage verification = Available
+- Partial uses coverage detection = Available
+
+
+Short version
+-------------
+- Variable definition detection -> definitions_total and named definitions
+- Computational use detection (c-use) -> c_use_pairs and c-use entries
+- Predicate use detection (p-use) -> p_use_pairs and p-use entries
+- Multiple definitions handling -> repeated definition-use entries
+- Cross-function use detection -> available from discovered pairs across analyzed code
+- Coverage reporting validation -> structured json report
+- Definition-use pair identification -> def_line, use_line, use_kind
+- Unreachable use detection -> compare covered_definition_use_pairs with total pairs
+- All uses coverage verification -> covered_definition_use_pairs of total pairs
+- Partial uses coverage detection -> compare covered versus total pairs
+
+
+Parameters from output used for mapping
+---------------------------------------
+- all uses json output -> definitions_total
+- all uses json output -> definition_use_pairs_total
+- all uses json output -> covered_definition_use_pairs
+- all uses json output -> c_use_pairs
+- all uses json output -> p_use_pairs
+- all uses json output -> definition_use_pairs

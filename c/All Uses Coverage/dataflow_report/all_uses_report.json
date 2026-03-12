@@ -1,0 +1,271 @@
+{
+  "definitions_total": 1013,
+  "definition_use_pairs_total": 6282,
+  "covered_definition_use_pairs": 6282,
+  "c_use_pairs": 4352,
+  "p_use_pairs": 1930,
+  "definition_use_pairs": [
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 609,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 613,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 618,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 624,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 629,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 635,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 643,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "length",
+      "def_line": 595,
+      "use_line": 655,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "allocation_length",
+      "def_line": 834,
+      "use_line": 857,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "allocation_length",
+      "def_line": 834,
+      "use_line": 858,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "skipped_bytes",
+      "def_line": 835,
+      "use_line": 846,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "skipped_bytes",
+      "def_line": 835,
+      "use_line": 857,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "decimal_point",
+      "def_line": 312,
+      "use_line": 373,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 190,
+      "use_line": 198,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "length",
+      "def_line": 190,
+      "use_line": 199,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "sequence_length",
+      "def_line": 876,
+      "use_line": 907,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "sequence_length",
+      "def_line": 876,
+      "use_line": 908,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "sequence_length",
+      "def_line": 876,
+      "use_line": 918,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "v2_len",
+      "def_line": 434,
+      "use_line": 447,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "v2_len",
+      "def_line": 434,
+      "use_line": 449,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "v2_len",
+      "def_line": 434,
+      "use_line": 452,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "has_decimal_point",
+      "def_line": 315,
+      "use_line": 348,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "has_decimal_point",
+      "def_line": 315,
+      "use_line": 366,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "newsize",
+      "def_line": 488,
+      "use_line": 532,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "newsize",
+      "def_line": 488,
+      "use_line": 538,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "newsize",
+      "def_line": 488,
+      "use_line": 564,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "utf8_position",
+      "def_line": 704,
+      "use_line": 794,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "utf8_position",
+      "def_line": 704,
+      "use_line": 797,
+      "use_kind": "c-use"
+    },
+    {
+      "name": "input_pointer",
+      "def_line": 951,
+      "use_line": 977,
+      "use_kind": "p-use"
+    },
+    {
+      "name": "input_pointer",
+      "def_line": 951,
+      "use_line": 979,
+      "use_kind": "p-use"
+    }
+  ],
+  "uncovered_definition_use_pairs": [
+    {
+      "name": "cJSON_AddFalseToObject",
+      "def_line": 2169
+    },
+    {
+      "name": "char",
+      "def_line": 2205
+    },
+    {
+      "name": "const",
+      "def_line": 2077
+    },
+    {
+      "name": "NULL",
+      "def_line": 1495
+    },
+    {
+      "name": "const",
+      "def_line": 2241
+    },
+    {
+      "name": "struct",
+      "def_line": 2217
+    },
+    {
+      "name": "const",
+      "def_line": 2217
+    },
+    {
+      "name": "char",
+      "def_line": 1372
+    },
+    {
+      "name": "return",
+      "def_line": 2360
+    },
+    {
+      "name": "cJSON_DetachItemFromArray",
+      "def_line": 2289
+    },
+    {
+      "name": "else",
+      "def_line": 2356
+    },
+    {
+      "name": "struct",
+      "def_line": 2289
+    },
+    {
+      "name": "newitem",
+      "def_line": 2349
+    },
+    {
+      "name": "cJSON_Delete",
+      "def_line": 2320
+    },
+    {
+      "name": "struct",
+      "def_line": 2015
+    },
+    {
+      "name": "cJSON_strdup",
+      "def_line": 2434
+    },
+    {
+      "name": "int",
+      "def_line": 1827
+    },
+    {
+      "name": "return",
+      "def_line": 1349
+    },
+    {
+      "name": "cJSON_CreateString",
+      "def_line": 2526
+    },
+    {
+      "name": "if",
+      "def_line": 1162
+    }
+  ]
+}

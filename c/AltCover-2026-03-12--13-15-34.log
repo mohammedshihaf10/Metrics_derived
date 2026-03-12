@@ -1,0 +1,21 @@
+System.UnauthorizedAccessException: Access to the path 'D:\Projects\sample repo\C' is denied.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenWrite(String path)
+   at AltCover.Zip.save(FSharpFunc`2 document, String report, Boolean zip) in /_//AltCover.Engine/CommandLine.fs:line 62
+   at AltCover.Main.I.result@756.Invoke(Unit unitVar0) in /_//AltCover.Engine/Main.fs:line 779
+   at AltCover.PathOperation.DoPathOperation[TAny](FSharpFunc`2 operation, FSharpFunc`2 handle) in /_//AltCover.Engine/Output.fs:line 21
+TargetSite = 
+Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.IO.FileOptions)
+Data = 
+seq []
+InnerException = 
+<null>
+HelpLink = 
+<null>
+Source = 
+"System.Private.CoreLib"
+HResult = 
+-2147024891
