@@ -1,0 +1,5 @@
+{
+  "name": "pip-audit",
+  "language": "python",
+  "entrypoint": "python -m pip_audit"
+}

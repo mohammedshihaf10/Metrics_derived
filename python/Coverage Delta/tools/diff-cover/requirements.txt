@@ -1,0 +1,4 @@
+diff-cover
+coverage
+pytest
+numpy

@@ -1,0 +1,266 @@
+pylint notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+pylint text output
+```text
+************* Module strings.aho_corasick
+strings\aho_corasick.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\aho_corasick.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+strings\aho_corasick.py:75:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+************* Module strings.barcode_validator
+strings\barcode_validator.py:67:4: R1720: Unnecessary "elif" after "raise", remove the leading "el" from "elif" (no-else-raise)
+strings\barcode_validator.py:80:4: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.boyer_moore_search
+strings\boyer_moore_search.py:34:8: C0103: Attribute name "textLen" doesn't conform to snake_case naming style (invalid-name)
+************* Module strings.word_patterns
+strings\word_patterns.py:49:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+
+------------------------------------------------------------------
+Your code has been rated at 8.98/10
+```
+
+pylint json output
+```json
+{
+  "messages": [
+    {
+      "type": "convention",
+      "symbol": "missing-module-docstring",
+      "message": "Missing module docstring",
+      "messageId": "C0114",
+      "module": "strings.aho_corasick",
+      "line": 1,
+      "column": 0,
+      "path": "strings\\aho_corasick.py"
+    },
+    {
+      "type": "warning",
+      "symbol": "unspecified-encoding",
+      "message": "Using open without explicitly specifying an encoding",
+      "messageId": "W1514",
+      "module": "strings.anagrams",
+      "line": 49,
+      "column": 9,
+      "path": "strings\\anagrams.py"
+    },
+    {
+      "type": "refactor",
+      "symbol": "no-else-raise",
+      "message": "Unnecessary \"elif\" after \"raise\", remove the leading \"el\" from \"elif\"",
+      "messageId": "R1720",
+      "module": "strings.barcode_validator",
+      "line": 67,
+      "column": 4,
+      "path": "strings\\barcode_validator.py"
+    },
+    {
+      "type": "convention",
+      "symbol": "invalid-name",
+      "message": "Attribute name \"textLen\" doesn't conform to snake_case naming style",
+      "messageId": "C0103",
+      "module": "strings.boyer_moore_search",
+      "line": 34,
+      "column": 8,
+      "path": "strings\\boyer_moore_search.py"
+    }
+  ],
+  "statistics": {
+    "messageTypeCount": {
+      "fatal": 0,
+      "error": 0,
+      "warning": 43,
+      "refactor": 8,
+      "convention": 75,
+      "info": 0
+    },
+    "modulesLinted": 60,
+    "score": 8.978930307941653
+  }
+}
+```
+
+This file shows which metrics from the output of
+`pylint_notebook.ipynb` map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- `pylint_report/pylint_text.txt`
+- `pylint_report/pylint_json2.json`
+
+Final classification
+--------------------
+1. Rule Detection Test
+2. Multiple Violations Detection
+3. Configuration File Handling
+4. CI/CD Integration Validation
+5. Rule Severity Classification
+6. Custom Rule Validation
+7. Unused Variable Detection
+8. Naming Convention Validation
+9. Code Style Rule Validation
+10. Complexity Rule Detection
+11. False Positive Prevention
+12. Violation Reporting Validation
+
+Mapping
+-------
+
+Rule Detection Test
+- maps to these notebook output metrics:
+  - pylint text output -> message id, symbol, message text, path, line, column
+  - pylint json output -> type, messageId, symbol, message, path, line, column
+- final mapping:
+  - Rule Detection Test = Available from pylint notebook output
+
+
+Multiple Violations Detection
+- maps to these notebook output metrics:
+  - pylint text output -> multiple diagnostics across many modules in one run
+  - pylint json output -> `messages` array with multiple entries
+  - pylint json output -> `statistics.messageTypeCount`
+- final mapping:
+  - Multiple Violations Detection = Available from pylint notebook output
+
+
+Configuration File Handling
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Configuration File Handling = Supported by pylint via config file / rcfile handling, but not shown in current notebook output
+
+
+CI/CD Integration Validation
+- maps to these notebook output metrics:
+  - pylint text output -> standard CLI diagnostics
+  - pylint json output -> machine-readable JSON diagnostics
+  - pylint text output -> overall score
+- final mapping:
+  - CI/CD Integration Validation = Available from pylint notebook output
+
+
+Rule Severity Classification
+- maps to these notebook output metrics:
+  - pylint json output -> `type` field
+  - pylint json output -> `statistics.messageTypeCount`
+  - pylint text output -> convention (`C`), warning (`W`), refactor (`R`) prefixes
+- final mapping:
+  - Rule Severity Classification = Available from pylint notebook output
+
+
+Custom Rule Validation
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Custom Rule Validation = Supported by pylint plugins/checkers, but not shown in current notebook output
+
+
+Unused Variable Detection
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Unused Variable Detection = Supported by pylint (`unused-variable` / `W0612`), but not triggered in the current notebook output
+
+
+Naming Convention Validation
+- maps to these notebook output metrics:
+  - pylint text output -> `C0103 invalid-name`
+  - pylint json output -> `messageId = C0103`, `symbol = invalid-name`
+- final mapping:
+  - Naming Convention Validation = Available from pylint notebook output
+
+
+Code Style Rule Validation
+- maps to these notebook output metrics:
+  - pylint text output -> missing docstring, enumerate suggestion, naming diagnostics
+  - pylint json output -> convention messages with `messageId`, `symbol`, and `message`
+- final mapping:
+  - Code Style Rule Validation = Available from pylint notebook output
+
+
+Complexity Rule Detection
+- maps to these notebook output metrics:
+  - pylint text output -> `R0911 too-many-return-statements`
+  - pylint text output -> `R0913 too-many-arguments`
+  - pylint json output -> refactor diagnostics such as `R1720 no-else-raise`
+- final mapping:
+  - Complexity Rule Detection = Available from pylint notebook output
+
+
+False Positive Prevention
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - False Positive Prevention = Supported through pylint disable / enable controls, but not shown in current notebook output
+
+
+Violation Reporting Validation
+- maps to these notebook output metrics:
+  - pylint text output -> `path:line:column: message-id: message (symbol)`
+  - pylint json output -> structured diagnostics for downstream reporting
+  - pylint json output -> `absolutePath`, `module`, `obj`, `line`, `column`
+- final mapping:
+  - Violation Reporting Validation = Available from pylint notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: existing Python repo at `..\Code Duplication\github-actions-cicd-example`
+- analyzed targets: `strings`, `audio_filters\iir_filter.py`
+- modules linted: `60`
+- score: `8.978930307941653`
+- message counts:
+  - convention = `75`
+  - warning = `43`
+  - refactor = `8`
+  - error = `0`
+  - fatal = `0`
+- representative triggered rules:
+  - `C0114 missing-module-docstring`
+  - `C0103 invalid-name`
+  - `W1514 unspecified-encoding`
+  - `W0105 pointless-string-statement`
+  - `R1720 no-else-raise`
+  - `R0911 too-many-return-statements`
+  - `R0913 too-many-arguments`
+
+
+Final classification result
+---------------------------
+- Rule Detection Test = Available
+- Multiple Violations Detection = Available
+- Configuration File Handling = Supported, not shown in current output
+- CI/CD Integration Validation = Available
+- Rule Severity Classification = Available
+- Custom Rule Validation = Supported, not shown in current output
+- Unused Variable Detection = Supported, not triggered in current output
+- Naming Convention Validation = Available
+- Code Style Rule Validation = Available
+- Complexity Rule Detection = Available
+- False Positive Prevention = Supported, not shown in current output
+- Violation Reporting Validation = Available
+
+
+Short version
+-------------
+- Rule Detection Test -> individual lint diagnostics with ids and locations
+- Multiple Violations Detection -> many diagnostics in one run plus summary counts
+- Configuration File Handling -> supported by pylint config handling, not shown here
+- CI/CD Integration Validation -> CLI and JSON output fit CI/CD usage
+- Rule Severity Classification -> convention, warning, refactor counts available
+- Custom Rule Validation -> supported by plugins/checkers, not shown here
+- Unused Variable Detection -> supported, not triggered here
+- Naming Convention Validation -> invalid-name diagnostics available
+- Code Style Rule Validation -> docstring and style diagnostics available
+- Complexity Rule Detection -> refactor and complexity-oriented diagnostics available
+- False Positive Prevention -> supported by enable/disable controls, not shown here
+- Violation Reporting Validation -> detailed text and JSON reporting available
+
+
+Parameters from output used for mapping
+---------------------------------------
+- pylint text output -> path, line, column, message-id, symbol, message, category prefix, score
+- pylint json output -> type, module, obj, line, column, endLine, endColumn, path, absolutePath, symbol, message, messageId
+- pylint json output -> statistics.messageTypeCount, statistics.modulesLinted, statistics.score

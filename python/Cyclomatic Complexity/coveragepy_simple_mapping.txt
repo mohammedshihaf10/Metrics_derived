@@ -1,0 +1,135 @@
+coverage.py notebook output to classification mapping
+=====================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+coverage report output
+```text
+Name                           Stmts   Miss  Cover
+--------------------------------------------------
+actionscicd\__init__.py            3      0   100%
+actionscicd\data\__init__.py       0      0   100%
+actionscicd\somecode.py           18      1    94%
+--------------------------------------------------
+TOTAL                             21      1    95%
+```
+
+coverage_branch.json relevant raw data
+```json
+{
+  "meta": {
+    "branch_coverage": true
+  },
+  "totals": {
+    "covered_lines": 20,
+    "num_statements": 21,
+    "percent_covered": 96.0,
+    "missing_lines": 1,
+    "num_branches": 4,
+    "covered_branches": 4,
+    "missing_branches": 0,
+    "percent_branches_covered": 100.0
+  }
+}
+```
+
+coverage_branch.xml relevant raw data
+```xml
+<coverage
+  lines-valid="21"
+  lines-covered="20"
+  line-rate="0.9524"
+  branches-valid="4"
+  branches-covered="4"
+  branch-rate="1"
+  complexity="0">
+```
+
+This file shows which metrics from the output of
+coveragepy_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- coverage_branch.json
+- coverage_branch.xml
+- coverage report output
+
+
+Final classification
+--------------------
+1. Decision Coverage
+2. Condition Coverage
+3. Path Coverage
+
+
+Notebook output files used
+--------------------------
+- D:\Projects\sample repo\github-actions-cicd-example\coverage_branch.json
+- D:\Projects\sample repo\github-actions-cicd-example\coverage_branch.xml
+
+
+Mapping
+-------
+
+Decision Coverage
+- maps to these notebook output metrics:
+  - coverage_branch.json -> totals.percent_branches_covered
+  - coverage_branch.json -> totals.covered_branches
+  - coverage_branch.json -> totals.num_branches
+  - coverage_branch.xml -> branch-rate
+  - coverage_branch.xml -> branches-covered
+  - coverage_branch.xml -> branches-valid
+- final mapping:
+  - Decision Coverage = Branch Coverage from coverage.py notebook output
+
+
+Condition Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Condition Coverage = Not available from coverage.py notebook output
+
+
+Path Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Path Coverage = Not available from coverage.py notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- coverage_branch.json -> totals.percent_branches_covered = 100.0
+- coverage_branch.json -> totals.covered_branches = 4
+- coverage_branch.json -> totals.num_branches = 4
+- coverage_branch.xml -> branch-rate = 1
+- coverage_branch.xml -> branches-covered = 4
+- coverage_branch.xml -> branches-valid = 4
+
+
+Final classification result
+---------------------------
+- Decision Coverage = 100%
+- Condition Coverage = N/A
+- Path Coverage = N/A
+
+
+Short version
+-------------
+- Decision Coverage -> percent_branches_covered / branch-rate
+- Condition Coverage -> not available
+- Path Coverage -> not available
+
+
+Not covered by coverage.py
+--------------------------
+- Control Flow Testing -> not available from coverage.py notebook output
+- Test Prioritization -> not available from coverage.py notebook output
+
+
+Parameters from output used for mapping
+---------------------------------------
+- coverage report output -> Stmts, Miss, Cover
+- coverage_branch.json -> totals.percent_branches_covered, totals.covered_branches, totals.num_branches
+- coverage_branch.xml -> branch-rate, branches-covered, branches-valid

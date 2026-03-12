@@ -1,0 +1,5 @@
+{
+  "name": "diff-cover",
+  "language": "python",
+  "technique": "Coverage Delta"
+}

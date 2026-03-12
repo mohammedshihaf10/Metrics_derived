@@ -1,0 +1,178 @@
+************* Module strings.aho_corasick
+strings\aho_corasick.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\aho_corasick.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+strings\aho_corasick.py:17:4: C0116: Missing function or method docstring (missing-function-docstring)
+strings\aho_corasick.py:23:4: C0116: Missing function or method docstring (missing-function-docstring)
+strings\aho_corasick.py:42:4: C0116: Missing function or method docstring (missing-function-docstring)
+strings\aho_corasick.py:75:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+************* Module strings.alternative_string_arrange
+strings\alternative_string_arrange.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.anagrams
+strings\anagrams.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\anagrams.py:8:14: W0621: Redefining name 'word' from outer scope (line 43) (redefined-outer-name)
+strings\anagrams.py:49:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+************* Module strings.autocomplete_using_trie
+strings\autocomplete_using_trie.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\autocomplete_using_trie.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+strings\autocomplete_using_trie.py:10:4: C0116: Missing function or method docstring (missing-function-docstring)
+strings\autocomplete_using_trie.py:11:8: W0621: Redefining name 'trie' from outer scope (line 35) (redefined-outer-name)
+strings\autocomplete_using_trie.py:18:4: C0116: Missing function or method docstring (missing-function-docstring)
+strings\autocomplete_using_trie.py:19:8: W0621: Redefining name 'trie' from outer scope (line 35) (redefined-outer-name)
+strings\autocomplete_using_trie.py:57:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module strings.barcode_validator
+strings\barcode_validator.py:6:20: W0621: Redefining name 'barcode' from outer scope (line 84) (redefined-outer-name)
+strings\barcode_validator.py:35:13: W0621: Redefining name 'barcode' from outer scope (line 84) (redefined-outer-name)
+strings\barcode_validator.py:56:16: W0621: Redefining name 'barcode' from outer scope (line 84) (redefined-outer-name)
+strings\barcode_validator.py:67:4: R1720: Unnecessary "elif" after "raise", remove the leading "el" from "elif" (no-else-raise)
+strings\barcode_validator.py:80:4: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.boyer_moore_search
+strings\boyer_moore_search.py:34:8: C0103: Attribute name "textLen" doesn't conform to snake_case naming style (invalid-name)
+strings\boyer_moore_search.py:34:22: C0103: Attribute name "patLen" doesn't conform to snake_case naming style (invalid-name)
+************* Module strings.camel_case_to_snake_case
+strings\camel_case_to_snake_case.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.can_string_be_rearranged_as_palindrome
+strings\can_string_be_rearranged_as_palindrome.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\can_string_be_rearranged_as_palindrome.py:50:4: W0105: String statement has no effect (pointless-string-statement)
+strings\can_string_be_rearranged_as_palindrome.py:59:4: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.capitalize
+strings\capitalize.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.check_anagrams
+strings\check_anagrams.py:37:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+************* Module strings.count_vowels
+strings\count_vowels.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.detecting_english_programmatically
+strings\detecting_english_programmatically.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\detecting_english_programmatically.py:7:0: C0116: Missing function or method docstring (missing-function-docstring)
+strings\detecting_english_programmatically.py:10:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+strings\detecting_english_programmatically.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module strings.dna
+strings\dna.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\dna.py:4:8: W0621: Redefining name 'dna' from outer scope (line 4) (redefined-outer-name)
+************* Module strings.edit_distance
+strings\edit_distance.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\edit_distance.py:32:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+************* Module strings.frequency_finder
+strings\frequency_finder.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\frequency_finder.py:38:0: C0116: Missing function or method docstring (missing-function-docstring)
+strings\frequency_finder.py:47:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module strings.hamming_distance
+strings\hamming_distance.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.indian_phone_validator
+strings\indian_phone_validator.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.is_contains_unique_chars
+strings\is_contains_unique_chars.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.is_pangram
+strings\is_pangram.py:81:4: C0415: Import outside toplevel (timeit.timeit) (import-outside-toplevel)
+************* Module strings.is_polish_national_id
+strings\is_polish_national_id.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\is_polish_national_id.py:49:8: W0707: Consider explicitly re-raising using 'except ValueError as exc' and 'raise ValueError(msg) from exc' (raise-missing-from)
+************* Module strings.is_spain_national_id
+strings\is_spain_national_id.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.is_srilankan_phone_number
+strings\is_srilankan_phone_number.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\is_srilankan_phone_number.py:4:31: W0621: Redefining name 'phone' from outer scope (line 31) (redefined-outer-name)
+strings\is_srilankan_phone_number.py:31:4: C0103: Constant name "phone" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module strings.is_valid_email_address
+strings\is_valid_email_address.py:43:27: W0621: Redefining name 'email' from outer scope (line 112) (redefined-outer-name)
+strings\is_valid_email_address.py:43:0: R0911: Too many return statements (7/6) (too-many-return-statements)
+************* Module strings.join
+strings\join.py:46:12: W0719: Raising too general exception: Exception (broad-exception-raised)
+strings\join.py:49:4: W0105: String statement has no effect (pointless-string-statement)
+strings\join.py:55:4: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.knuth_morris_pratt
+strings\knuth_morris_pratt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\knuth_morris_pratt.py:4:23: W0621: Redefining name 'text' from outer scope (line 79) (redefined-outer-name)
+strings\knuth_morris_pratt.py:4:34: W0621: Redefining name 'pattern' from outer scope (line 71) (redefined-outer-name)
+strings\knuth_morris_pratt.py:45:22: W0621: Redefining name 'pattern' from outer scope (line 71) (redefined-outer-name)
+strings\knuth_morris_pratt.py:72:4: C0103: Constant name "text1" doesn't conform to UPPER_CASE naming style (invalid-name)
+strings\knuth_morris_pratt.py:73:4: C0103: Constant name "text2" doesn't conform to UPPER_CASE naming style (invalid-name)
+strings\knuth_morris_pratt.py:93:4: C0103: Constant name "kmp" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module strings.levenshtein_distance
+strings\levenshtein_distance.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\levenshtein_distance.py:4:25: W0621: Redefining name 'first_word' from outer scope (line 116) (redefined-outer-name)
+strings\levenshtein_distance.py:4:42: W0621: Redefining name 'second_word' from outer scope (line 117) (redefined-outer-name)
+strings\levenshtein_distance.py:28:15: W1114: Positional arguments appear to be out of order (arguments-out-of-order)
+strings\levenshtein_distance.py:54:35: W0621: Redefining name 'first_word' from outer scope (line 116) (redefined-outer-name)
+strings\levenshtein_distance.py:54:52: W0621: Redefining name 'second_word' from outer scope (line 117) (redefined-outer-name)
+strings\levenshtein_distance.py:78:15: W1114: Positional arguments appear to be out of order (arguments-out-of-order)
+strings\levenshtein_distance.py:105:4: C0415: Import outside toplevel (timeit.timeit) (import-outside-toplevel)
+************* Module strings.lower
+strings\lower.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.manacher
+strings\manacher.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\manacher.py:75:0: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.min_cost_string_conversion
+strings\min_cost_string_conversion.py:12:0: R0913: Too many arguments (6/5) (too-many-arguments)
+strings\min_cost_string_conversion.py:12:0: R0917: Too many positional arguments (6/5) (too-many-positional-arguments)
+strings\min_cost_string_conversion.py:48:8: W0621: Redefining name 'i' from outer scope (line 127) (redefined-outer-name)
+strings\min_cost_string_conversion.py:76:50: W0621: Redefining name 'i' from outer scope (line 127) (redefined-outer-name)
+strings\min_cost_string_conversion.py:103:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+strings\min_cost_string_conversion.py:130:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+strings\min_cost_string_conversion.py:135:27: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:135:37: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:143:27: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:143:38: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:151:27: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:151:37: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:159:27: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+strings\min_cost_string_conversion.py:159:37: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+************* Module strings.palindrome
+strings\palindrome.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\palindrome.py:68:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+strings\palindrome.py:84:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module strings.pig_latin
+strings\pig_latin.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\pig_latin.py:1:14: W0621: Redefining name 'word' from outer scope (line 43) (redefined-outer-name)
+strings\pig_latin.py:38:19: W0631: Using possibly undefined loop variable 'i' (undefined-loop-variable)
+strings\pig_latin.py:38:30: W0631: Using possibly undefined loop variable 'i' (undefined-loop-variable)
+************* Module strings.rabin_karp
+strings\rabin_karp.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\rabin_karp.py:2:0: C0103: Constant name "alphabet_size" doesn't conform to UPPER_CASE naming style (invalid-name)
+strings\rabin_karp.py:4:0: C0103: Constant name "modulus" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module strings.remove_duplicate
+strings\remove_duplicate.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.reverse_letters
+strings\reverse_letters.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.reverse_words
+strings\reverse_words.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.snake_case_to_camel_pascal_case
+strings\snake_case_to_camel_pascal_case.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.split
+strings\split.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.string_switch_case
+strings\string_switch_case.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\string_switch_case.py:3:0: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.strip
+strings\strip.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.text_justification
+strings\text_justification.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\text_justification.py:38:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+************* Module strings.title
+strings\title.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\title.py:18:4: W0105: String statement has no effect (pointless-string-statement)
+strings\title.py:24:4: W0105: String statement has no effect (pointless-string-statement)
+************* Module strings.top_k_frequent_words
+strings\top_k_frequent_words.py:23:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module strings.upper
+strings\upper.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.wave_string
+strings\wave_string.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module strings.wildcard_pattern_matching
+strings\wildcard_pattern_matching.py:10:18: W0621: Redefining name 'input_string' from outer scope (line 105) (redefined-outer-name)
+strings\wildcard_pattern_matching.py:10:37: W0621: Redefining name 'pattern' from outer scope (line 106) (redefined-outer-name)
+strings\wildcard_pattern_matching.py:105:4: C0103: Constant name "input_string" doesn't conform to UPPER_CASE naming style (invalid-name)
+strings\wildcard_pattern_matching.py:106:4: C0103: Constant name "pattern" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module strings.word_occurrence
+strings\word_occurrence.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\word_occurrence.py:19:8: W0621: Redefining name 'word' from outer scope (line 25) (redefined-outer-name)
+************* Module strings.word_patterns
+strings\word_patterns.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+strings\word_patterns.py:1:21: W0621: Redefining name 'word' from outer scope (line 53) (redefined-outer-name)
+strings\word_patterns.py:49:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+strings\word_patterns.py:60:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+************* Module audio_filters.iir_filter
+audio_filters\iir_filter.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.98/10 (previous run: 8.98/10, +0.00)
+

@@ -1,0 +1,225 @@
+radon notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+radon cc output
+```text
+actionscicd\somecode.py
+    F 15:0 load_datafile - A (3)
+    F 9:0 add_arrays - A (1)
+    F 32:0 unused_fn - A (1)
+tests\test_somecode.py
+    C 8:0 TestSomeCode - A (2)
+    M 11:4 TestSomeCode.test_add_arrays - A (1)
+    M 18:4 TestSomeCode.test_load_datafile - A (1)
+```
+
+radon mi output
+```text
+setup.py - A
+actionscicd\somecode.py - A
+actionscicd\__init__.py - A
+actionscicd\data\__init__.py - A
+docs\source\conf.py - A
+tests\test_somecode.py - A
+tests\__init__.py - A
+```
+
+radon raw output
+```text
+setup.py
+    LOC: 4
+    LLOC: 3
+    SLOC: 3
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 1
+actionscicd\somecode.py
+    LOC: 35
+    LLOC: 22
+    SLOC: 18
+    Comments: 0
+    Single comments: 3
+    Multi: 2
+    Blank: 12
+actionscicd\__init__.py
+    LOC: 9
+    LLOC: 4
+    SLOC: 3
+    Comments: 0
+    Single comments: 0
+    Multi: 3
+    Blank: 3
+actionscicd\data\__init__.py
+    LOC: 1
+    LLOC: 0
+    SLOC: 0
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 0
+docs\source\conf.py
+    LOC: 59
+    LLOC: 15
+    SLOC: 14
+    Comments: 30
+    Single comments: 30
+    Multi: 0
+    Blank: 15
+tests\test_somecode.py
+    LOC: 27
+    LLOC: 18
+    SLOC: 14
+    Comments: 0
+    Single comments: 4
+    Multi: 0
+    Blank: 9
+tests\__init__.py
+    LOC: 1
+    LLOC: 0
+    SLOC: 0
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 0
+```
+
+radon hal output
+```text
+setup.py:
+    vocabulary: 3
+    length: 3
+    volume: 4.754887502163469
+    difficulty: 0.5
+    effort: 2.3774437510817346
+    time: 0.1320802083934297
+    bugs: 0.0015849625007211565
+actionscicd\somecode.py:
+    vocabulary: 6
+    length: 6
+    volume: 15.509775004326936
+    difficulty: 1.0
+    effort: 15.509775004326936
+    time: 0.861654166907052
+    bugs: 0.005169925001442312
+tests\test_somecode.py:
+    vocabulary: 5
+    length: 6
+    volume: 13.931568569324174
+    difficulty: 0.5
+    effort: 6.965784284662087
+    time: 0.3869880158145604
+    bugs: 0.004643856189774725
+```
+
+This file shows which metrics from the output of
+radon_notebook.ipynb map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- radon cc output
+- radon mi output
+- radon raw output
+- radon hal output
+
+
+Final classification
+--------------------
+1. Control Flow Testing
+2. Decision Coverage
+3. Condition Coverage
+4. Path Coverage
+5. Maintainability Analysis
+6. Test Prioritization
+
+
+Mapping
+-------
+
+Control Flow Testing
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Control Flow Testing = Not available from radon notebook output
+
+
+Decision Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Decision Coverage = Not available from radon notebook output
+
+
+Condition Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Condition Coverage = Not available from radon notebook output
+
+
+Path Coverage
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Path Coverage = Not available from radon notebook output
+
+
+Maintainability Analysis
+- maps to these notebook output metrics:
+  - radon mi output -> file grade values such as A, B, C
+  - radon cc output -> per function or method cyclomatic complexity grades and scores
+  - radon raw output -> LOC, LLOC, SLOC, Comments, Blank
+  - radon hal output -> volume, difficulty, effort, time, bugs
+- final mapping:
+  - Maintainability Analysis = Available from radon notebook output
+
+
+Test Prioritization
+- maps to these notebook output metrics:
+  - none
+- final mapping:
+  - Test Prioritization = Not available from radon notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- radon cc output = cyclomatic complexity grades and scores
+- radon mi output = maintainability index grades
+- radon raw output = LOC, LLOC, SLOC, comments, blank lines
+- radon hal output = Halstead metrics
+
+
+Final classification result
+---------------------------
+- Control Flow Testing = N/A
+- Decision Coverage = N/A
+- Condition Coverage = N/A
+- Path Coverage = N/A
+- Maintainability Analysis = Available
+- Test Prioritization = N/A
+
+
+Short version
+-------------
+- Control Flow Testing -> not available
+- Decision Coverage -> not available
+- Condition Coverage -> not available
+- Path Coverage -> not available
+- Maintainability Analysis -> radon mi / cc / raw / hal
+- Test Prioritization -> not available
+
+
+Not covered by radon
+--------------------
+- Test Prioritization -> not available from radon notebook output
+
+
+Parameters from output used for mapping
+---------------------------------------
+- radon cc output -> grade, complexity score, function or method entry
+- radon mi output -> maintainability grade
+- radon raw output -> LOC, LLOC, SLOC, Comments, Single comments, Multi, Blank
+- radon hal output -> vocabulary, length, volume, difficulty, effort, time, bugs

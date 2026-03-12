@@ -1,0 +1,8 @@
+{
+  "name": "radon",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "radon"
+  ]
+}

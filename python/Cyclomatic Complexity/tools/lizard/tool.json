@@ -1,0 +1,8 @@
+{
+  "name": "lizard",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "lizard"
+  ]
+}

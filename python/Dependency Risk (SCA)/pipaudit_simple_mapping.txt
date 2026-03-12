@@ -1,0 +1,145 @@
+pip-audit notebook output to classification mapping
+==================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+pip-audit json output
+```json
+{
+  "dependencies": [
+    {
+      "name": "numpy",
+      "version": "2.4.3",
+      "vulns": []
+    }
+  ],
+  "fixes": []
+}
+```
+
+pip-audit console summary
+```text
+No known vulnerabilities found
+```
+
+This file shows which metrics from the output of
+`pipaudit_notebook.ipynb` map to your final classification.
+
+Generated output used for this mapping
+--------------------------------------
+- `pipaudit_report/pipaudit.json`
+
+Final classification
+--------------------
+1. Vulnerability dependency detection
+2. Outdated dependency detection
+3. Transitive dependency analysis
+4. License compliance testing
+5. Supply chain security analysis
+6. Dependency health monitoring
+7. Risk Prioritization
+8. Continuous dependency monitoring
+
+Mapping
+-------
+
+Vulnerability dependency detection
+- maps to these notebook output metrics:
+  - pip-audit json output -> `dependencies[].name`, `dependencies[].version`, `dependencies[].vulns`
+- final mapping:
+  - Vulnerability dependency detection = Available from pip-audit notebook output
+
+
+Outdated dependency detection
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Outdated dependency detection = Not available from pip-audit notebook output
+
+
+Transitive dependency analysis
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - Transitive dependency analysis = Not available from pip-audit notebook output
+
+
+License compliance testing
+- maps to these notebook output metrics:
+  - none from current output
+- final mapping:
+  - License compliance testing = Not available from pip-audit notebook output
+
+
+Supply chain security analysis
+- maps to these notebook output metrics:
+  - pip-audit json output -> dependency inventory and known-vulnerability status
+- final mapping:
+  - Supply chain security analysis = Available from pip-audit notebook output
+
+
+Dependency health monitoring
+- maps to these notebook output metrics:
+  - pip-audit json output -> audited dependency list and vulnerability status
+  - pip-audit console summary -> `No known vulnerabilities found`
+- final mapping:
+  - Dependency health monitoring = Available from pip-audit notebook output
+
+
+Risk Prioritization
+- maps to these notebook output metrics:
+  - pip-audit json output -> vulnerability presence/absence and fix list
+- final mapping:
+  - Risk Prioritization = Available from pip-audit notebook output
+
+
+Continuous dependency monitoring
+- maps to these notebook output metrics:
+  - pip-audit json output -> machine-readable result for repeat runs
+  - pip-audit console summary -> CI-friendly success state
+- final mapping:
+  - Continuous dependency monitoring = Available from pip-audit notebook output
+
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: existing Python repo at `..\Cyclomatic Complexity\github-actions-cicd-example`
+- analyzed manifest: `requirements.txt`
+- audited dependency count: `1`
+- dependency found:
+  - `numpy 2.4.3`
+- vulnerability count: `0`
+- fixes count: `0`
+- console summary:
+  - `No known vulnerabilities found`
+
+
+Final classification result
+---------------------------
+- Vulnerability dependency detection = Available
+- Outdated dependency detection = Not available
+- Transitive dependency analysis = Not available
+- License compliance testing = Not available
+- Supply chain security analysis = Available
+- Dependency health monitoring = Available
+- Risk Prioritization = Available
+- Continuous dependency monitoring = Available
+
+
+Short version
+-------------
+- Vulnerability dependency detection -> pip-audit enumerates dependencies and vulnerability records
+- Outdated dependency detection -> not provided by current pip-audit output
+- Transitive dependency analysis -> not provided by current pip-audit output
+- License compliance testing -> not provided by current pip-audit output
+- Supply chain security analysis -> package vulnerability status is available
+- Dependency health monitoring -> repeatable audited dependency status is available
+- Risk Prioritization -> vulnerability presence/absence and fixes feed prioritization
+- Continuous dependency monitoring -> JSON output is suitable for recurring CI runs
+
+
+Parameters from output used for mapping
+---------------------------------------
+- pip-audit json output -> dependencies.name, dependencies.version, dependencies.vulns, fixes
+- pip-audit console summary -> no-known-vulnerabilities status line

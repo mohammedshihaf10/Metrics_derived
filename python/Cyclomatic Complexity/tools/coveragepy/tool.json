@@ -1,0 +1,8 @@
+{
+  "name": "coverage.py",
+  "entrypoint": [
+    "{python}",
+    "-m",
+    "coverage"
+  ]
+}
