@@ -1,0 +1,14 @@
+coverage.py statement notebook output to classification mapping
+==============================================================
+
+Final classification
+--------------------
+1. Code Execution verification
+2. Unit testing support
+3. Basic logic validation
+4. Dead code detection
+5. Test completeness evaluation
+
+Parameters from output used for mapping
+---------------------------------------
+- coverage json output -> covered_lines, num_statements, percent_covered, missing_lines

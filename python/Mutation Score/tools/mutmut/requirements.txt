@@ -1,0 +1,4 @@
+cosmic-ray
+pytest
+numpy
+setuptools

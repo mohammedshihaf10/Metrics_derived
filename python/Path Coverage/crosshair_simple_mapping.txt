@@ -1,0 +1,19 @@
+crosshair path notebook output to classification mapping
+=======================================================
+
+Final classification
+--------------------
+1. Path detection test
+2. Path execution tracking
+3. Complete coverage path verification
+4. Partial path coverage detection
+5. Nested condition path testing
+6. Loop path detection
+7. Unreachable path detection
+8. Exception path handling
+9. Multi function path tracking
+10. CI/CD Integration test
+
+Parameters from output used for mapping
+---------------------------------------
+- crosshair cover output -> generated concrete calls and distinct path-driving inputs
