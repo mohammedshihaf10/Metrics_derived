@@ -1,0 +1,16 @@
+coverage.py branch notebook output to classification mapping
+===========================================================
+
+Final classification
+--------------------
+1. Decision Outcome Verification
+2. Conditional Logic Testing
+3. Control flow validation
+4. Loop condition testing
+5. Edge case detection
+6. Logic Error detection
+7. Test case completeness
+
+Parameters from output used for mapping
+---------------------------------------
+- coverage json/xml output -> covered_branches, num_branches, percent_branches_covered, branch-rate, branches-covered, branches-valid

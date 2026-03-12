@@ -1,0 +1,15 @@
+coverage.py + beniget notebook output to classification mapping
+==============================================================
+
+Final classification
+--------------------
+1. Variable Definition Detection
+2. Coverage Measurement
+3. Reporting Validation
+4. Definition-Use Mapping
+5. Uncovered Definition Detection
+6. Edge Case Handling
+
+Parameters from output used for mapping
+---------------------------------------
+- combined output -> definitions_total, definitions_covered, definitions_with_covered_use, uncovered_definitions, definition_use_pairs

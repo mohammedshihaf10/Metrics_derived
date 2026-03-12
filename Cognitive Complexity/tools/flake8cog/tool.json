@@ -1,8 +1,0 @@
-{
-  "name": "flake8-cognitive-complexity",
-  "entrypoint": [
-    "{python}",
-    "-m",
-    "flake8"
-  ]
-}

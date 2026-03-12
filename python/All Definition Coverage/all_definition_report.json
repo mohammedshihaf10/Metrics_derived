@@ -1,0 +1,183 @@
+{
+  "file": "D:\\Projects\\sample repo\\Cyclomatic Complexity\\github-actions-cicd-example\\actionscicd\\somecode.py",
+  "covered_lines": [
+    4,
+    5,
+    6,
+    9,
+    12,
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    32
+  ],
+  "missing_lines": [
+    35
+  ],
+  "definitions_total": 9,
+  "definitions_covered": 9,
+  "definitions_with_covered_use": 9,
+  "definitions": [
+    {
+      "name": "arr1",
+      "lineno": 9,
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "arr2",
+      "lineno": 9,
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "filename",
+      "lineno": 15,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "names",
+      "lineno": 18,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "ages",
+      "lineno": 19,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "file",
+      "lineno": 21,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "idx",
+      "lineno": 22,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "line",
+      "lineno": 22,
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "lineentries",
+      "lineno": 25,
+      "scope": "load_datafile",
+      "covered": true
+    }
+  ],
+  "definition_use_pairs": [
+    {
+      "scope": "add_arrays",
+      "name": "arr1",
+      "def_line": 9,
+      "use_line": 12,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "add_arrays",
+      "name": "arr2",
+      "def_line": 9,
+      "use_line": 12,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "filename",
+      "def_line": 15,
+      "use_line": 21,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "file",
+      "def_line": 21,
+      "use_line": 22,
+      "use_kind": "p-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "idx",
+      "def_line": 22,
+      "use_line": 23,
+      "use_kind": "p-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "line",
+      "def_line": 22,
+      "use_line": 25,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "names",
+      "def_line": 18,
+      "use_line": 26,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "lineentries",
+      "def_line": 25,
+      "use_line": 26,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "ages",
+      "def_line": 19,
+      "use_line": 27,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "lineentries",
+      "def_line": 25,
+      "use_line": 27,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "names",
+      "def_line": 18,
+      "use_line": 29,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "ages",
+      "def_line": 19,
+      "use_line": 29,
+      "use_kind": "c-use",
+      "covered_pair": true
+    }
+  ],
+  "uncovered_definitions": []
+}

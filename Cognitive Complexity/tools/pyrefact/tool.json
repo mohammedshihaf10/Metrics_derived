@@ -1,8 +1,0 @@
-{
-  "name": "pyrefact",
-  "entrypoint": [
-    "{python}",
-    "-m",
-    "pyrefact"
-  ]
-}

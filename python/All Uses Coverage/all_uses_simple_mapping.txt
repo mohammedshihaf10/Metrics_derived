@@ -1,0 +1,19 @@
+coverage.py + beniget notebook output to classification mapping
+==============================================================
+
+Final classification
+--------------------
+1. Variable definition detection
+2. Computational use detection (c-use)
+3. Predicate use detection (p-use)
+4. Multiple definitions handling
+5. Cross-function use detection
+6. Coverage reporting validation
+7. Definition-use pair identification
+8. Unreachable use detection
+9. All uses coverage verification
+10. Partial uses coverage detection
+
+Parameters from output used for mapping
+---------------------------------------
+- combined output -> definition_use_pairs, c-use pairs, p-use pairs, uncovered_definitions, definitions_total, definitions_with_covered_use

@@ -1,8 +1,0 @@
-{
-  "name": "pyflowchart",
-  "entrypoint": [
-    "{python}",
-    "-m",
-    "pyflowchart"
-  ]
-}
