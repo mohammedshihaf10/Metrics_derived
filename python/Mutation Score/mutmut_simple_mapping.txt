@@ -1,0 +1,16 @@
+cosmic-ray notebook output to classification mapping
+===================================================
+
+Final classification
+--------------------
+1. Test Suite Effectiveness Evaluation
+2. Fault Detection Capability
+3. Test Coverage Quality Validation
+4. Test Case Improvement Identification
+5. Edge Case Detection
+6. Regression Testing Validation
+7. Code Logic Validation
+
+Parameters from output used for mapping
+---------------------------------------
+- cosmic-ray dump output -> job counts by outcome, total mutants, killed/survived/incompetent mutants, mutation score

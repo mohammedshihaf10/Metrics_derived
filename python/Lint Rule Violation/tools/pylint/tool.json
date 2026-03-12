@@ -1,0 +1,5 @@
+{
+  "name": "pylint",
+  "language": "python",
+  "entrypoint": "python -m pylint"
+}
