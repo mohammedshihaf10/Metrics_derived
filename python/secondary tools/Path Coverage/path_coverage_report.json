@@ -1,0 +1,44 @@
+{
+  "file": "D:\\Projects\\Metrics_derived\\python\\Cyclomatic Complexity\\github-actions-cicd-example\\actionscicd\\somecode.py",
+  "covered_lines": [
+    4,
+    5,
+    6,
+    9,
+    12,
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    32
+  ],
+  "functions": [
+    {
+      "name": "add_arrays",
+      "lineno": 9,
+      "estimated_paths": 1,
+      "covered": true
+    },
+    {
+      "name": "load_datafile",
+      "lineno": 15,
+      "estimated_paths": 1,
+      "covered": true
+    },
+    {
+      "name": "unused_fn",
+      "lineno": 32,
+      "estimated_paths": 1,
+      "covered": true
+    }
+  ],
+  "covered_functions": 3,
+  "estimated_total_paths": 3
+}

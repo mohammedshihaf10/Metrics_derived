@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "file": "actionscicd\\somecode.py",
+      "functions": [
+        {
+          "name": "add_arrays",
+          "lineno": 9,
+          "cognitive_complexity": 0
+        },
+        {
+          "name": "load_datafile",
+          "lineno": 15,
+          "cognitive_complexity": 0
+        },
+        {
+          "name": "unused_fn",
+          "lineno": 32,
+          "cognitive_complexity": 0
+        }
+      ]
+    }
+  ]
+}

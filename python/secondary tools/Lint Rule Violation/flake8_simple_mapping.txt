@@ -1,0 +1,63 @@
+flake8 notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+flake8 report summary
+```json
+{
+  "total_findings": 4693,
+  "top_codes": [
+    ["E501", 3757],
+    ["E251", 478],
+    ["E202", 235]
+  ]
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `flake8_report.txt`
+
+Final classification
+--------------------
+1. Rule Detection Test
+2. Multiple Violations Detection
+3. Configuration File Handling
+4. CI/CD Integration Validation
+5. Rule Severity Classification
+6. Custom Rule Validation
+7. Unused Variable Detection
+8. Naming Convention Validation
+9. Code Style Rule Validation
+10. Complexity Rule Detection
+11. False Positive Prevention
+12. Violation Reporting Validation
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: `..\Code Duplication\github-actions-cicd-example`
+- total findings captured: `4693`
+- dominant rule: `E501` with `3757` findings
+- other common rules: `E251` with `478`, `E202` with `235`
+
+Final classification result
+---------------------------
+- Rule Detection Test = Available
+- Multiple Violations Detection = Available
+- Configuration File Handling = Partial
+- CI/CD Integration Validation = Available
+- Rule Severity Classification = Partial
+- Custom Rule Validation = Not available from this run
+- Unused Variable Detection = Partial
+- Naming Convention Validation = Partial
+- Code Style Rule Validation = Available
+- Complexity Rule Detection = Partial
+- False Positive Prevention = Not demonstrated in this run
+- Violation Reporting Validation = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- per-line `filename:line:column:code:message` output from `flake8_report.txt`
+- grouped rule codes and finding counts

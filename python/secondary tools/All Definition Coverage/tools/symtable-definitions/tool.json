@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python analyze_definitions.py",
+    "name":  "symtable-definitions",
+    "language":  "python"
+}

@@ -1,0 +1,101 @@
+{
+  "file": "D:\\Projects\\Metrics_derived\\python\\Cyclomatic Complexity\\github-actions-cicd-example\\actionscicd\\somecode.py",
+  "covered_lines": [
+    4,
+    5,
+    6,
+    9,
+    12,
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    32
+  ],
+  "definition_use_pairs_total": 9,
+  "covered_definition_use_pairs": 9,
+  "c_use_pairs": 9,
+  "p_use_pairs": 0,
+  "definition_use_pairs": [
+    {
+      "scope": "add_arrays",
+      "name": "arr1",
+      "def_line": 9,
+      "use_line": 12,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "add_arrays",
+      "name": "arr2",
+      "def_line": 9,
+      "use_line": 12,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "filename",
+      "def_line": 15,
+      "use_line": 21,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "names",
+      "def_line": 18,
+      "use_line": 26,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "lineentries",
+      "def_line": 25,
+      "use_line": 26,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "ages",
+      "def_line": 19,
+      "use_line": 27,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "lineentries",
+      "def_line": 25,
+      "use_line": 27,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "names",
+      "def_line": 18,
+      "use_line": 29,
+      "use_kind": "c-use",
+      "covered_pair": true
+    },
+    {
+      "scope": "load_datafile",
+      "name": "ages",
+      "def_line": 19,
+      "use_line": 29,
+      "use_kind": "c-use",
+      "covered_pair": true
+    }
+  ],
+  "uncovered_definition_use_pairs": []
+}

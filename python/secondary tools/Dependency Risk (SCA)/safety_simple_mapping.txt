@@ -1,0 +1,54 @@
+safety notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+safety json summary
+```json
+{
+  "packages_found": 43,
+  "vulnerabilities_found": 1,
+  "package": "pip",
+  "analyzed_version": "25.3",
+  "cve": "CVE-2026-1703"
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `safety_report.json`
+
+Final classification
+--------------------
+1. Vulnerability dependency detection
+2. Outdated dependency detection
+3. Transitive dependency analysis
+4. License compliance testing
+5. Supply chain security analysis
+6. Dependency health monitoring
+7. Risk Prioritization
+8. Continuous dependency monitoring
+
+Current result from your notebook output
+----------------------------------------
+- scanned packages: `43`
+- vulnerabilities found: `1`
+- affected package: `pip`
+- analyzed version: `25.3`
+- reported CVE: `CVE-2026-1703`
+
+Final classification result
+---------------------------
+- Vulnerability dependency detection = Available
+- Outdated dependency detection = Available
+- Transitive dependency analysis = Partial
+- License compliance testing = Not available from this run
+- Supply chain security analysis = Available
+- Dependency health monitoring = Available
+- Risk Prioritization = Available
+- Continuous dependency monitoring = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `report_meta.packages_found`, `report_meta.vulnerabilities_found`, `vulnerabilities[].package_name`, `vulnerabilities[].analyzed_version`, `vulnerabilities[].CVE`

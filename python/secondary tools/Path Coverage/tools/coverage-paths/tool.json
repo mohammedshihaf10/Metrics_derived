@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python analyze_path_coverage.py",
+    "name":  "coverage-paths",
+    "language":  "python"
+}

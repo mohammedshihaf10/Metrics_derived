@@ -1,0 +1,9 @@
+{
+  "compare_ref": "HEAD~1",
+  "changed_lines": 0,
+  "covered_changed_lines": 0,
+  "uncovered_changed_lines": 0,
+  "coverage_percent": 100.0,
+  "covered": [],
+  "uncovered": []
+}

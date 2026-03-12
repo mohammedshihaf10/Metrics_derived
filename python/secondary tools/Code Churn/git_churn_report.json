@@ -1,0 +1,78 @@
+{
+  "summary": {
+    "total_files_touched": 38,
+    "total_commits": 1
+  },
+  "top_files": [
+    {
+      "path": ".gitignore",
+      "commit_count": 2,
+      "added_lines": 269,
+      "deleted_lines": 129,
+      "total_churn": 398
+    },
+    {
+      "path": "setup.cfg",
+      "commit_count": 9,
+      "added_lines": 94,
+      "deleted_lines": 54,
+      "total_churn": 148
+    },
+    {
+      "path": "README.md",
+      "commit_count": 10,
+      "added_lines": 100,
+      "deleted_lines": 35,
+      "total_churn": 135
+    },
+    {
+      "path": ".github/workflows/5_docs_deploy.yml",
+      "commit_count": 5,
+      "added_lines": 71,
+      "deleted_lines": 11,
+      "total_churn": 82
+    },
+    {
+      "path": "docs/source/conf.py",
+      "commit_count": 1,
+      "added_lines": 59,
+      "deleted_lines": 0,
+      "total_churn": 59
+    },
+    {
+      "path": ".github/workflows/coverage.yml",
+      "commit_count": 4,
+      "added_lines": 55,
+      "deleted_lines": 3,
+      "total_churn": 58
+    },
+    {
+      "path": "tests/test_somecode.py",
+      "commit_count": 5,
+      "added_lines": 42,
+      "deleted_lines": 15,
+      "total_churn": 57
+    },
+    {
+      "path": ".github/workflows/3_linting.yml",
+      "commit_count": 2,
+      "added_lines": 52,
+      "deleted_lines": 4,
+      "total_churn": 56
+    },
+    {
+      "path": "actionsci/somecode.py",
+      "commit_count": 3,
+      "added_lines": 43,
+      "deleted_lines": 6,
+      "total_churn": 49
+    },
+    {
+      "path": ".github/workflows/4_docs_build.yml",
+      "commit_count": 5,
+      "added_lines": 44,
+      "deleted_lines": 4,
+      "total_churn": 48
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python analyze_uses.py",
+    "name":  "symtable-uses",
+    "language":  "python"
+}

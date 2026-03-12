@@ -1,0 +1,43 @@
+wily notebook output to classification mapping
+============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+wily runtime result
+```text
+Failed to setup archiver: 'Dirty repository, make sure you commit/stash files first'
+```
+
+Generated output used for this mapping
+--------------------------------------
+- runner stderr from `run_wily.py`
+
+Final classification
+--------------------
+1. Maintainability Assessment
+2. Code Quality Monitoring
+3. Code Review Assistance
+4. Refactoring Prioritization
+5. Risk Identification
+6. Technical Debt Detection
+7. Testability Evaluation
+
+Current result from your notebook output
+----------------------------------------
+- execution status: failed before metric generation
+- tool limitation encountered: target repo was dirty, so `wily build` refused to archive history
+
+Final classification result
+---------------------------
+- Maintainability Assessment = Not available in this run
+- Code Quality Monitoring = Not available in this run
+- Code Review Assistance = Not available in this run
+- Refactoring Prioritization = Not available in this run
+- Risk Identification = Not available in this run
+- Technical Debt Detection = Not available in this run
+- Testability Evaluation = Not available in this run
+
+Parameters from output used for mapping
+---------------------------------------
+- runtime error message from `wily build`

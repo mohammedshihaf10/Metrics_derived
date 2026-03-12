@@ -1,0 +1,54 @@
+semgrep notebook output to classification mapping
+================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+semgrep report summary
+```json
+{
+  "results": 6,
+  "errors": 22,
+  "top_ids": [
+    "python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1",
+    "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+    "python.lang.security.deserialization.pickle.avoid-pickle"
+  ]
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `semgrep_report.json`
+
+Final classification
+--------------------
+1. Security Vulnerability detection
+2. Secure Coding validation
+3. Input Validation Testing
+4. Data flow security analysis
+5. Authentication and authorization weakness detection
+6. Dependency and library vulnerability detection (partial)
+7. Compliance and security standard validation
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: `..\Code Duplication\github-actions-cicd-example`
+- security findings returned: `6`
+- parser or scan errors returned: `22`
+- reported rule IDs included insecure hash usage, dynamic urllib usage, and unsafe pickle deserialization
+- runner hit a Windows codepage issue while streaming output, but the JSON report file was written successfully
+
+Final classification result
+---------------------------
+- Security Vulnerability detection = Available
+- Secure Coding validation = Available
+- Input Validation Testing = Partial
+- Data flow security analysis = Available
+- Authentication and authorization weakness detection = Partial
+- Dependency and library vulnerability detection (partial) = Partial
+- Compliance and security standard validation = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `results[].check_id`, `results[].path`, `results[].extra.message`, `results[].extra.severity`, `errors[]`

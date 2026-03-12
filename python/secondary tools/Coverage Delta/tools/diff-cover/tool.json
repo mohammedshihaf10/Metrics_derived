@@ -1,0 +1,5 @@
+﻿{
+  "name": "coverage-git-diff",
+  "language": "python",
+  "entrypoint": "python analyze_coverage_delta.py"
+}

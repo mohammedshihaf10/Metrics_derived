@@ -1,0 +1,46 @@
+mccabe notebook output to classification mapping
+===============================================
+
+Actual raw data from notebook output
+------------------------------------
+
+mccabe report output
+```text
+9:0: 'add_arrays' 1
+15:0: 'load_datafile' 3
+32:0: 'unused_fn' 1
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `mccabe_report.txt`
+
+Final classification
+--------------------
+1. Control Flow Testing
+2. Decision Coverage
+3. Condition Coverage
+4. Path Coverage
+5. Maintainability Analysis
+6. Test Prioritization
+
+Current result from your notebook output
+----------------------------------------
+- analyzed file: `actionscicd\somecode.py`
+- functions reported: `3`
+- maximum cyclomatic complexity: `3`
+- highest complexity function: `load_datafile`
+
+Final classification result
+---------------------------
+- Control Flow Testing = Not directly available
+- Decision Coverage = Not directly available
+- Condition Coverage = Not directly available
+- Path Coverage = Not directly available
+- Maintainability Analysis = Available
+- Test Prioritization = Partial
+
+Parameters from output used for mapping
+---------------------------------------
+- function name and line from `mccabe_report.txt`
+- cyclomatic complexity score per function

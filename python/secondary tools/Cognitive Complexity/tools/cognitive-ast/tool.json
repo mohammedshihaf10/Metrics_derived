@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python analyze_cognitive_ast.py",
+    "name":  "cognitive-ast",
+    "language":  "python"
+}

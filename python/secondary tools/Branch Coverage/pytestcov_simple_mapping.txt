@@ -1,0 +1,60 @@
+pytest-cov branch notebook output to classification mapping
+======================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+pytest-cov console summary output
+```text
+..                                                                       [100%]
+Coverage JSON written to file coverage_branch_secondary.json
+2 passed in 0.59s
+```
+
+pytest-cov json totals
+```json
+{
+  "covered_lines": 20,
+  "num_statements": 21,
+  "percent_covered": 96.0,
+  "missing_lines": 1,
+  "num_branches": 4,
+  "covered_branches": 4,
+  "missing_branches": 0,
+  "percent_branches_covered": 100.0
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `D:\Projects\Metrics_derived\python\Cyclomatic Complexity\github-actions-cicd-example\coverage_branch_secondary.json`
+
+Final classification
+--------------------
+1. Decision Outcome Verification
+2. Conditional Logic Testing
+3. Control flow validation
+4. Loop condition testing
+5. Edge case detection
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: `..\Cyclomatic Complexity\github-actions-cicd-example`
+- pytest result: `2` tests passed
+- statements covered: `20 / 21`
+- statement coverage: `96.0%`
+- branches covered: `4 / 4`
+- branch coverage: `100.0%`
+- missing lines: `1`
+
+Final classification result
+---------------------------
+- Decision Outcome Verification = Available
+- Conditional Logic Testing = Available
+- Control flow validation = Available
+- Loop condition testing = Available
+- Edge case detection = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `totals.covered_lines`, `totals.num_statements`, `totals.num_branches`, `totals.covered_branches`, `totals.missing_branches`, `totals.percent_branches_covered`

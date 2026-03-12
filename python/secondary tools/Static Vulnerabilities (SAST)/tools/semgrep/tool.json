@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python -m semgrep",
+    "name":  "semgrep",
+    "language":  "python"
+}

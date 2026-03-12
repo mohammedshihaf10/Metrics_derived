@@ -1,0 +1,251 @@
+python.exe : [32mFound 0 revisions from 'git' archiver in 'D:\Projects\Metrics_derived\python\secondary 
+tools\Maintainability Index\.tmp_clean_repo'.[0m
+At line:7 char:12
++   $text = (& $python '.\run_wily.py' 'run' '--repo' $tmp '--' 'report ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([32mFound 0 re...lean_repo'.[0m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[32mRunning operators - halstead,raw,maintainability,cyclomatic[0m
+[32mCompleted building wily history, run `wily report <file>` or `wily index` to see more.[0m
++----------+----------+--------+----------+----------+----------+---------+
+| Revisi   | Author   | Date   | Cyclom   | Unique   | Mainta   | Lines   |
+| on       |          |        | atic C   | Operan   | inabil   | of      |
+|          |          |        | omplex   | ds       | ity      | Code    |
+|          |          |        | ity      |          | Index    |         |
++==========+==========+========+==========+==========+==========+=========+
+| a83bfc   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 4        | Malins   | 2-21   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 43206f   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| f        | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 7557560  | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+|          | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 373dd4   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 2        | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 4bc0c1   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 6        | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 8537fa   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| f        | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| cddfa5   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 4        | Malins   | 2-11   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 77eb32   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 0        | Malins   | 2-09   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 1b01c3   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| e        | Malins   | 2-09   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 2593fe   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| e        | Malins   | 2-09   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 89f23d   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 5        | Malins   | 2-09   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| e8d62a   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35 (0)  |
+| 8        | Malins   | 2-03   |          |          | 1        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 56b0c4   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.604   | 35      |
+| d        | Malins   | 2-03   |          |          | 1 (+0.   | (-5)    |
+|          |          |        |          |          | 091823   |         |
+|          |          |        |          |          | 9)       |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 0a8da3   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.512   | 40 (0)  |
+| 3        | Malins   | 2-03   |          |          | 3 (+0.   |         |
+|          |          |        |          |          | 35754)   |         |
++----------+----------+--------+----------+----------+----------+---------+
+| f3c678   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 5        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 66ad8d   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 6        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 5fbe77   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 1        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 4b14a4   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| f        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| cc6778   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 2        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 2572859  | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+|          | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 71ddb6   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| b        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 5d1120   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 7        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 817e42   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 1        | Malins   | 2-03   |          |          | 8        |         |
+|          |          |        |          |          | (0.0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| 7e5200   | Alex     | 2021-1 | 5 (0)    | 2 (0)    | 80.154   | 40 (0)  |
+| 9        | Malins   | 2-03   |          |          | 8 (0)    |         |
++----------+----------+--------+----------+----------+----------+---------+
+| c1f23a   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 5        | Malins   | 1-18   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 222eec   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| a        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 17aaaa   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 9        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 8342174  | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+|          | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| f34ac9   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 3        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 8978b9   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 0        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 9d352c   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 8        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 839a92   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| a        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 350e10   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| d        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| d07f65   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 3        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 8a13b0   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 1        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 5d23d6   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 9        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| ce7b84   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 5        | Malins   | 1-17   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| f62614   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| b        | Malins   | 1-16   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 77d820   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| 1        | Malins   | 1-16   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| 8498947  | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+|          | Malins   | 1-14   | found    | found    | found    | found   |
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+| dcc4d8   | Alex     | 2021-1 | Not      | Not      | Not      | Not     |
+| b        | Malins   | 1-14   | found    | found    | found    | found   |
+[32mUsing default metrics ['cyclomatic.complexity', 'halstead.h1', 'maintainability.mi', 'raw.loc'][0m
+[32m-----------History for ['cyclomatic.complexity', 'halstead.h1', 'maintainability.mi', 'raw.loc']------------[0m
+|          |          |        | 'actio   | 'actio   | 'actio   | 'actio  |
+|          |          |        | nscicd   | nscicd   | nscicd   | nscicd  |
+|          |          |        | \\some   | \\some   | \\some   | \\some  |
+|          |          |        | code.p   | code.p   | code.p   | code.p  |
+|          |          |        | y'       | y'       | y'       | y'      |
++----------+----------+--------+----------+----------+----------+---------+
+

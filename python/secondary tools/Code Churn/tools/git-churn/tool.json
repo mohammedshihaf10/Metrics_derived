@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python analyze_git_churn.py",
+    "name":  "git-churn",
+    "language":  "python"
+}

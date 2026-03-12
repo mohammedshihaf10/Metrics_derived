@@ -1,0 +1,53 @@
+coverage.py + git diff notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+coverage delta report summary
+```json
+{
+  "compare_ref": "HEAD~1",
+  "changed_lines": 0,
+  "covered_changed_lines": 0,
+  "uncovered_changed_lines": 0,
+  "coverage_percent": 100.0
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `coverage_delta_secondary.json`
+
+Final classification
+--------------------
+1. Regression Testing Monitoring
+2. Test Suite Effectiveness Tracking
+3. New code testing validation
+4. Quality Improvement Measurement
+5. Test Coverage
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: `..\Cyclomatic Complexity\github-actions-cicd-example`
+- compare ref: `HEAD~1`
+- changed Python lines in diff: `0`
+- covered changed lines: `0`
+- uncovered changed lines: `0`
+- reported changed-line coverage: `100.0%`
+
+Final classification result
+---------------------------
+- Regression Testing Monitoring = Available
+- Test Suite Effectiveness Tracking = Available
+- New code testing validation = Available
+- Quality Improvement Measurement = Available
+- Test Coverage = Available
+
+Note
+----
+- this run had no changed Python lines against `HEAD~1`, so the tool reported `100.0%` on an empty diff
+
+Parameters from output used for mapping
+---------------------------------------
+- `compare_ref`, `changed_lines`, `covered_changed_lines`, `uncovered_changed_lines`, `coverage_percent`

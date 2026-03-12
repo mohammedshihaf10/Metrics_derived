@@ -1,0 +1,50 @@
+coverage.py + symtable notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+all definition report summary
+```json
+{
+  "definitions_total": 9,
+  "definitions_covered": 9,
+  "definitions_with_covered_use": 6,
+  "uncovered_definitions": [
+    "add_arrays",
+    "load_datafile",
+    "unused_fn"
+  ]
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `all_definition_report.json`
+
+Final classification
+--------------------
+1. Variable Definition Detection
+2. Coverage Measurement
+3. Reporting Validation
+4. Definition-Use
+
+Current result from your notebook output
+----------------------------------------
+- analyzed file: `actionscicd\somecode.py`
+- pytest result: `2` tests passed
+- total definitions found: `9`
+- covered definitions: `9`
+- definitions with covered use: `6`
+- function definitions reported without covered use in summary: `add_arrays`, `load_datafile`, `unused_fn`
+
+Final classification result
+---------------------------
+- Variable Definition Detection = Available
+- Coverage Measurement = Available
+- Reporting Validation = Available
+- Definition-Use = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `definitions_total`, `definitions_covered`, `definitions_with_covered_use`, `definitions[].name`, `definitions[].kind`, `uses[].name`, `uses[].def_line`

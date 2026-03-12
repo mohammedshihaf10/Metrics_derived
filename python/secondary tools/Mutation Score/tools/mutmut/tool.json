@@ -1,0 +1,5 @@
+﻿{
+    "entrypoint":  "python -m mutmut",
+    "name":  "mutmut",
+    "language":  "python"
+}

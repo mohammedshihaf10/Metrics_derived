@@ -1,0 +1,52 @@
+coverage.py + ast paths notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+path coverage report summary
+```json
+{
+  "covered_functions": 3,
+  "estimated_total_paths": 3,
+  "functions": [
+    {"name": "add_arrays", "estimated_paths": 1, "covered": true},
+    {"name": "load_datafile", "estimated_paths": 1, "covered": true},
+    {"name": "unused_fn", "estimated_paths": 1, "covered": true}
+  ]
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `path_coverage_report.json`
+
+Final classification
+--------------------
+1. Path detection test
+2. Path execution tracking
+3. Complete coverage path verification
+4. Partial path coverage detection
+5. Nested condition validation
+
+Current result from your notebook output
+----------------------------------------
+- analyzed file: `actionscicd\somecode.py`
+- pytest result: `2` tests passed
+- covered functions: `3`
+- estimated total paths: `3`
+- `add_arrays` covered = `true`
+- `load_datafile` covered = `true`
+- `unused_fn` covered = `true`
+
+Final classification result
+---------------------------
+- Path detection test = Available
+- Path execution tracking = Available
+- Complete coverage path verification = Available
+- Partial path coverage detection = Available
+- Nested condition validation = Partial
+
+Parameters from output used for mapping
+---------------------------------------
+- `covered_functions`, `estimated_total_paths`, `functions[].name`, `functions[].estimated_paths`, `functions[].covered`

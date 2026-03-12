@@ -1,0 +1,178 @@
+{
+  "file": "D:\\Projects\\Metrics_derived\\python\\Cyclomatic Complexity\\github-actions-cicd-example\\actionscicd\\somecode.py",
+  "covered_lines": [
+    4,
+    5,
+    6,
+    9,
+    12,
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    32
+  ],
+  "definitions_total": 9,
+  "definitions_covered": 9,
+  "definitions_with_covered_use": 6,
+  "definitions": [
+    {
+      "name": "add_arrays",
+      "lineno": 9,
+      "kind": "function",
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "arr1",
+      "lineno": 9,
+      "kind": "parameter",
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "arr2",
+      "lineno": 9,
+      "kind": "parameter",
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "load_datafile",
+      "lineno": 15,
+      "kind": "function",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "filename",
+      "lineno": 15,
+      "kind": "parameter",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "names",
+      "lineno": 18,
+      "kind": "assignment",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "ages",
+      "lineno": 19,
+      "kind": "assignment",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "lineentries",
+      "lineno": 25,
+      "kind": "assignment",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "unused_fn",
+      "lineno": 32,
+      "kind": "function",
+      "scope": "unused_fn",
+      "covered": true
+    }
+  ],
+  "uses": [
+    {
+      "name": "arr1",
+      "lineno": 12,
+      "scope": "add_arrays",
+      "covered": true,
+      "def_line": 9
+    },
+    {
+      "name": "arr2",
+      "lineno": 12,
+      "scope": "add_arrays",
+      "covered": true,
+      "def_line": 9
+    },
+    {
+      "name": "names",
+      "lineno": 29,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 18
+    },
+    {
+      "name": "ages",
+      "lineno": 29,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 19
+    },
+    {
+      "name": "filename",
+      "lineno": 21,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 15
+    },
+    {
+      "name": "names",
+      "lineno": 26,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 18
+    },
+    {
+      "name": "lineentries",
+      "lineno": 26,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 25
+    },
+    {
+      "name": "ages",
+      "lineno": 27,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 19
+    },
+    {
+      "name": "lineentries",
+      "lineno": 27,
+      "scope": "load_datafile",
+      "covered": true,
+      "def_line": 25
+    }
+  ],
+  "uncovered_definitions": [
+    {
+      "name": "add_arrays",
+      "lineno": 9,
+      "kind": "function",
+      "scope": "add_arrays",
+      "covered": true
+    },
+    {
+      "name": "load_datafile",
+      "lineno": 15,
+      "kind": "function",
+      "scope": "load_datafile",
+      "covered": true
+    },
+    {
+      "name": "unused_fn",
+      "lineno": 32,
+      "kind": "function",
+      "scope": "unused_fn",
+      "covered": true
+    }
+  ]
+}

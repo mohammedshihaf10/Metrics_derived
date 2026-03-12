@@ -1,0 +1,39 @@
+mutmut notebook output to classification mapping
+================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+mutmut runtime result
+```text
+To run mutmut on Windows, please use the WSL. Native windows support is tracked in issue https://github.com/boxed/mutmut/issues/397
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `mutmut_report.txt`
+
+Final classification
+--------------------
+1. Test Suite Effectiveness Evaluation
+2. Fault Detection Capability
+3. Test Coverage Quality Validation
+4. Test Case Improvement Identification
+5. Edge Case Detection Support
+
+Current result from your notebook output
+----------------------------------------
+- execution status: blocked by tool platform limitation
+- mutmut requested WSL for Windows execution
+
+Final classification result
+---------------------------
+- Test Suite Effectiveness Evaluation = Not available in this run
+- Fault Detection Capability = Not available in this run
+- Test Coverage Quality Validation = Not available in this run
+- Test Case Improvement Identification = Not available in this run
+- Edge Case Detection Support = Not available in this run
+
+Parameters from output used for mapping
+---------------------------------------
+- runtime limitation message from `mutmut`

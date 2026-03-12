@@ -1,0 +1,48 @@
+coverage.py + symtable notebook output to classification mapping
+==============================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+all uses report summary
+```json
+{
+  "definition_use_pairs_total": 9,
+  "covered_definition_use_pairs": 9,
+  "c_use_pairs": 9,
+  "p_use_pairs": 0,
+  "uncovered_definition_use_pairs": []
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `all_uses_report.json`
+
+Final classification
+--------------------
+1. Variable definition detection
+2. Computational use detection (c-use)
+3. Predicate use detection (p-use)
+4. Multiple definitions
+
+Current result from your notebook output
+----------------------------------------
+- analyzed file: `actionscicd\somecode.py`
+- pytest result: `2` tests passed
+- total definition-use pairs: `9`
+- covered definition-use pairs: `9`
+- computational uses: `9`
+- predicate uses: `0`
+- uncovered definition-use pairs: `0`
+
+Final classification result
+---------------------------
+- Variable definition detection = Available
+- Computational use detection (c-use) = Available
+- Predicate use detection (p-use) = Not observed in this run
+- Multiple definitions = Partial
+
+Parameters from output used for mapping
+---------------------------------------
+- `definition_use_pairs_total`, `covered_definition_use_pairs`, `c_use_pairs`, `p_use_pairs`, `definition_use_pairs[].name`, `definition_use_pairs[].def_line`, `definition_use_pairs[].use_line`

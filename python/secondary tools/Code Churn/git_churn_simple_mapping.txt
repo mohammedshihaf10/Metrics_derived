@@ -1,0 +1,61 @@
+git log --numstat notebook output to classification mapping
+=========================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+git churn json output
+```json
+{
+  "summary": {
+    "total_files_touched": 38,
+    "total_commits": 1
+  },
+  "top_file": {
+    "path": ".gitignore",
+    "commit_count": 2,
+    "added_lines": 269,
+    "deleted_lines": 129,
+    "total_churn": 398
+  },
+  "test_file": {
+    "path": "tests/test_somecode.py",
+    "commit_count": 5,
+    "added_lines": 42,
+    "deleted_lines": 15,
+    "total_churn": 57
+  }
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `git_churn_report.json`
+
+Final classification
+--------------------
+1. Risk-based testing prioritization
+2. Regression testing focus
+3. Defect prediction
+4. Test case maintenance identification
+5. Change Impact analysis
+
+Current result from your notebook output
+----------------------------------------
+- analyzed repo: `..\Code Duplication\github-actions-cicd-example`
+- total files touched: `38`
+- total commits in summary: `1`
+- highest churn file: `.gitignore` with `398` total churn
+- test file churn: `tests/test_somecode.py` with `57` total churn
+
+Final classification result
+---------------------------
+- Risk-based testing prioritization = Available
+- Regression testing focus = Available
+- Defect prediction = Available
+- Test case maintenance identification = Available
+- Change Impact analysis = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `summary.total_files_touched`, `summary.total_commits`, `top_files[].path`, `top_files[].commit_count`, `top_files[].added_lines`, `top_files[].deleted_lines`, `top_files[].total_churn`

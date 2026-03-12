@@ -1,0 +1,52 @@
+cognitive-ast notebook output to classification mapping
+======================================================
+
+Actual raw data from notebook output
+------------------------------------
+
+cognitive-ast json output
+```json
+{
+  "functions": [
+    ["actionscicd\somecode.py", "add_arrays", 0],
+    ["actionscicd\somecode.py", "load_datafile", 0],
+    ["actionscicd\somecode.py", "unused_fn", 0]
+  ],
+  "max_complexity": 0
+}
+```
+
+Generated output used for this mapping
+--------------------------------------
+- `cognitive_ast_report.json`
+
+Final classification
+--------------------
+1. Code Understandability Analysis
+2. Maintainability Evaluation
+3. Testability Analysis
+4. Risk Detection
+5. Refactoring Guidance
+6. Code Review Support
+7. Testing Effort Prioritization
+
+Current result from your notebook output
+----------------------------------------
+- analyzed file: `actionscicd\somecode.py`
+- functions analyzed: `3`
+- maximum cognitive complexity: `0`
+- all reported functions were low-complexity in this run
+
+Final classification result
+---------------------------
+- Code Understandability Analysis = Available
+- Maintainability Evaluation = Available
+- Testability Analysis = Available
+- Risk Detection = Available
+- Refactoring Guidance = Available
+- Code Review Support = Available
+- Testing Effort Prioritization = Available
+
+Parameters from output used for mapping
+---------------------------------------
+- `files[].functions[].name`, `files[].functions[].lineno`, `files[].functions[].cognitive_complexity`
