@@ -1,50 +1,101 @@
-copydetect notebook output to classification mapping
-===================================================
-
-Actual raw data from notebook output
-------------------------------------
-
-copydetect report summary
-```text
-Number of files tested (vertical): 1380
-Number above display threshold: 509 (36.88%)
-Console run completed and report.html was generated.
-```
-
-Generated output used for this mapping
---------------------------------------
-- `D:\Projects\Metrics_derived\python\Code Duplication\github-actions-cicd-exampleeport.html`
-
-Final classification
---------------------
-1. Maintainability Testing
-2. Defect Propagation Risk Detection
-3. Refactoring Identification
-4. Code Quality Assessment
-5. Test Maintenance Reduction (partial)
-6. Refactoring Opportunity Detection
-7. Risk-based testing prioritization (partial)
-
-Current result from your notebook output
-----------------------------------------
-- analyzed repo: `..\Code Duplication\github-actions-cicd-example`
-- files tested: `1380`
-- comparisons above display threshold: `509`
-- threshold hit rate: `36.88%`
-- HTML similarity matrix and histogram were generated successfully
-
-Final classification result
----------------------------
-- Maintainability Testing = Available
-- Defect Propagation Risk Detection = Available
-- Refactoring Identification = Available
-- Code Quality Assessment = Available
-- Test Maintenance Reduction (partial) = Partial
-- Refactoring Opportunity Detection = Available
-- Risk-based testing prioritization (partial) = Partial
-
-Parameters from output used for mapping
----------------------------------------
-- `Number of files tested (vertical)`
-- `Number above display threshold`
-- similarity matrix and histogram report sections in `report.html`
+copydetect notebook output to classification mapping
+
+===================================================
+
+
+
+Actual raw data from notebook output
+
+------------------------------------
+
+
+
+copydetect report summary
+
+```text
+
+Number of files tested (vertical): 1380
+
+Number above display threshold: 509 (36.88%)
+
+Console run completed and report.html was generated.
+
+```
+
+
+
+Generated output used for this mapping
+
+--------------------------------------
+
+- `.\github-actions-cicd-example
+eport.html`
+
+
+
+Final classification
+
+--------------------
+
+1. Maintainability Testing
+
+2. Defect Propagation Risk Detection
+
+3. Refactoring Identification
+
+4. Code Quality Assessment
+
+5. Test Maintenance Reduction (partial)
+
+6. Refactoring Opportunity Detection
+
+7. Risk-based testing prioritization (partial)
+
+
+
+Current result from your notebook output
+
+----------------------------------------
+
+- analyzed repo: `..\Code Duplication\github-actions-cicd-example`
+
+- files tested: `1380`
+
+- comparisons above display threshold: `509`
+
+- threshold hit rate: `36.88%`
+
+- HTML similarity matrix and histogram were generated successfully
+
+
+
+Final classification result
+
+---------------------------
+
+- Maintainability Testing = Available
+
+- Defect Propagation Risk Detection = Available
+
+- Refactoring Identification = Available
+
+- Code Quality Assessment = Available
+
+- Test Maintenance Reduction (partial) = Partial
+
+- Refactoring Opportunity Detection = Available
+
+- Risk-based testing prioritization (partial) = Partial
+
+
+
+Parameters from output used for mapping
+
+---------------------------------------
+
+- `Number of files tested (vertical)`
+
+- `Number above display threshold`
+
+- similarity matrix and histogram report sections in `report.html`
+

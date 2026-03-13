@@ -1,56 +1,112 @@
-pytest-cov notebook output to classification mapping
-=================================================
-
-Actual raw data from notebook output
-------------------------------------
-
-pytest-cov console summary output
-```text
-..                                                                       [100%]
-Coverage JSON written to file coverage_statement_secondary.json
-2 passed in 0.74s
-```
-
-pytest-cov json totals
-```json
-{
-  "covered_lines": 20,
-  "num_statements": 21,
-  "percent_covered": 95.23809523809524,
-  "missing_lines": 1,
-  "excluded_lines": 0
-}
-```
-
-Generated output used for this mapping
---------------------------------------
-- `D:\Projects\Metrics_derived\python\Cyclomatic Complexity\github-actions-cicd-example\coverage_statement_secondary.json`
-
-Final classification
---------------------
-1. Code Execution verification
-2. Unit testing support
-3. Basic logic validation
-4. Dead code detection
-5. Test completeness evaluation
-
-Current result from your notebook output
-----------------------------------------
-- analyzed repo: `..\Cyclomatic Complexity\github-actions-cicd-example`
-- pytest result: `2` tests passed
-- covered lines: `20`
-- statements: `21`
-- statement coverage: `95.24%`
-- missing lines: `1`
-
-Final classification result
----------------------------
-- Code Execution verification = Available
-- Unit testing support = Available
-- Basic logic validation = Available
-- Dead code detection = Available
-- Test completeness evaluation = Available
-
-Parameters from output used for mapping
----------------------------------------
-- `totals.covered_lines`, `totals.num_statements`, `totals.percent_covered`, `totals.missing_lines`
+pytest-cov notebook output to classification mapping
+
+=================================================
+
+
+
+Actual raw data from notebook output
+
+------------------------------------
+
+
+
+pytest-cov console summary output
+
+```text
+
+..                                                                       [100%]
+
+Coverage JSON written to file coverage_statement_secondary.json
+
+2 passed in 0.74s
+
+```
+
+
+
+pytest-cov json totals
+
+```json
+
+{
+
+  "covered_lines": 20,
+
+  "num_statements": 21,
+
+  "percent_covered": 95.23809523809524,
+
+  "missing_lines": 1,
+
+  "excluded_lines": 0
+
+}
+
+```
+
+
+
+Generated output used for this mapping
+
+--------------------------------------
+
+- `.\github-actions-cicd-example\coverage_statement_secondary.json`
+
+
+
+Final classification
+
+--------------------
+
+1. Code Execution verification
+
+2. Unit testing support
+
+3. Basic logic validation
+
+4. Dead code detection
+
+5. Test completeness evaluation
+
+
+
+Current result from your notebook output
+
+----------------------------------------
+
+- analyzed repo: `..\Cyclomatic Complexity\github-actions-cicd-example`
+
+- pytest result: `2` tests passed
+
+- covered lines: `20`
+
+- statements: `21`
+
+- statement coverage: `95.24%`
+
+- missing lines: `1`
+
+
+
+Final classification result
+
+---------------------------
+
+- Code Execution verification = Available
+
+- Unit testing support = Available
+
+- Basic logic validation = Available
+
+- Dead code detection = Available
+
+- Test completeness evaluation = Available
+
+
+
+Parameters from output used for mapping
+
+---------------------------------------
+
+- `totals.covered_lines`, `totals.num_statements`, `totals.percent_covered`, `totals.missing_lines`
+

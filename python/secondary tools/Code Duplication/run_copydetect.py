@@ -1,10 +1,10 @@
 ﻿#!/usr/bin/env python3
 from __future__ import annotations
-import argparse, subprocess, sys
+import argparse, os, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 TOOL_DIR = ROOT / "tools" / "copydetect"
-DEFAULT_REPO_PATH = r"D:\Projects\Metrics_derived\python\Code Duplication\github-actions-cicd-example"
+DEFAULT_REPO_PATH = str((ROOT.parent / "github-actions-cicd-example").resolve())
 DEFAULT_OUTPUT_PATH = str(ROOT / "copydetect_report.html")
 def venv_python(path: Path) -> Path:
     return path / ".venv" / ("Scripts" if sys.platform.startswith("win") else "bin") / ("python.exe" if sys.platform.startswith("win") else "python")
@@ -24,7 +24,9 @@ def normalize(args: list[str]) -> list[str]:
 def run_tool(repo: Path, output_path: Path | None, tool_args: list[str]) -> int:
     if not repo.is_dir():
         raise SystemExit(f"Repo path does not exist or is not a directory: {repo}")
-    result = subprocess.run([resolve_python(), "-m", "copydetect", *tool_args], cwd=str(repo), capture_output=True, text=True)
+    env = dict(os.environ)
+    env["MPLBACKEND"] = "Agg"
+    result = subprocess.run([resolve_python(), "-m", "copydetect", *tool_args], cwd=str(repo), capture_output=True, text=True, env=env)
     if result.stdout:
         print(result.stdout, end="")
     if result.stderr:

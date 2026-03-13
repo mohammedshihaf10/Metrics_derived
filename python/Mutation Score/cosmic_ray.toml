@@ -1,8 +1,8 @@
 [cosmic-ray]
-module-path = "D:/Projects/sample repo/Cyclomatic Complexity/github-actions-cicd-example/actionscicd/somecode.py"
+module-path = "D:/Projects/Metrics_derived/python/Cyclomatic Complexity/github-actions-cicd-example/actionscicd/somecode.py"
 timeout = 20.0
 excluded-modules = []
-test-command = '"D:\\Projects\\sample repo\\Mutation Score\\tools\\mutmut\\.venv\\Scripts\\python.exe" -m pytest -q'
+test-command = '"D:\\Projects\\Metrics_derived\\python\\Mutation Score\\tools\\mutmut\\.venv\\Scripts\\python.exe" -m pytest -q'
 
 [cosmic-ray.distributor]
 name = "local"

@@ -1,0 +1,61 @@
+﻿# Temporary outputs and misc artifacts
+.csharp_exec/
+TestResults/
+final_mapping.txt
+tmp*
+
+# Python runtime/artifact caches
+**/__pycache__/
+**/.pytest_cache/
+**/.cache/
+**/.ipynb_checkpoints/
+**/.venv/
+**/venv/
+.env
+.envrc
+*.py[cod]
+
+# Coverage / notebook outputs
+.coverage
+.coverage.*
+htmlcov/
+
+# Build/test artifacts
+*.log
+*.dll
+*.exe
+*.pdb
+
+# Dependency caches
+**/node_modules/
+**/site-packages/
+coverage/
+
+# IDE/editor settings
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows explorer
+Thumbs.db
+Desktop.ini
+
+# Language/tooling outputs we keep locally only
+C#/
+C++/
+c/
+java/
+javascript/
+typescript/
+.csharp_exec/
+
+# Generated GitHub workflow samples (not meant for commit)
+**/github-actions-cicd-example/
+
+# Runtime artifacts
+*.deps.json
+*.runtimeconfig.json

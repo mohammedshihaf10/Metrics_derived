@@ -4,7 +4,7 @@ import argparse, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 TOOL_DIR = ROOT / "tools" / "coverage-paths"
-DEFAULT_REPO_PATH = r"D:\Projects\Metrics_derived\python\Cyclomatic Complexity\github-actions-cicd-example"
+DEFAULT_REPO_PATH = str((ROOT.parent / "github-actions-cicd-example").resolve())
 DEFAULT_OUTPUT_PATH = str(ROOT / "path_coverage_report.json")
 def venv_python(path: Path) -> Path:
     return path / ".venv" / ("Scripts" if sys.platform.startswith("win") else "bin") / ("python.exe" if sys.platform.startswith("win") else "python")

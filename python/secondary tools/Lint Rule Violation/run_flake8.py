@@ -4,7 +4,7 @@ import argparse, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 TOOL_DIR = ROOT / "tools" / "flake8"
-DEFAULT_REPO_PATH = r"D:\Projects\Metrics_derived\python\Code Duplication\github-actions-cicd-example"
+DEFAULT_REPO_PATH = str((ROOT.parent / "github-actions-cicd-example").resolve())
 DEFAULT_OUTPUT_PATH = str(ROOT / "flake8_report.txt")
 def venv_python(path: Path) -> Path:
     return path / ".venv" / ("Scripts" if sys.platform.startswith("win") else "bin") / ("python.exe" if sys.platform.startswith("win") else "python")
@@ -32,7 +32,7 @@ def run_tool(repo: Path, output_path: Path | None, tool_args: list[str]) -> int:
     if output_path is not None and result.stdout:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(result.stdout, encoding="utf-8")
-    return result.returncode
+    return 0 if result.returncode in (0, 1) else result.returncode
 def main() -> int:
     ap = argparse.ArgumentParser(description="Install or run flake8 against a provided repo.")
     sp = ap.add_subparsers(dest="command", required=True)

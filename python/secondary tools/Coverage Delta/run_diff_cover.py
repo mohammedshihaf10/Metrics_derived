@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 TOOL_DIR = ROOT / "tools" / "diff-cover"
-DEFAULT_REPO_PATH = r"D:\Projects\Metrics_derived\python\Cyclomatic Complexity\github-actions-cicd-example"
+DEFAULT_REPO_PATH = str((ROOT.parent / "github-actions-cicd-example").resolve())
 DEFAULT_OUTPUT_PATH = str(ROOT / "coverage_delta_secondary.json")
 
 

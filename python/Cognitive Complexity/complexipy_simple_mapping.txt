@@ -147,5 +147,74 @@ Short version
 
 Parameters from output used for mapping
 ---------------------------------------
+
+Generic values
+--------------
+- Cognitive complexity score per function
+- Function-level complexity ranking
+- File-level function association
+- Lowest-complexity vs highest-complexity comparison
+
+Main parameters
+---------------
 - complexipy console output -> function_name, complexity
 - complexipy json output -> complexity, file_name, function_name, path
+
+Calculation / confirmation used for classification
+--------------------------------------------------
+
+Code Understandability Analysis
+- confirmation logic:
+  Compare `complexity` across all `function_name` values.
+- main parameters used:
+  `complexity`, `function_name`
+- why this confirms the classification:
+  Higher cognitive complexity means the function is harder to read and reason about.
+
+Maintainability Evaluation
+- confirmation logic:
+  Group each `function_name` under `file_name`, then review which files contain higher `complexity` values.
+- main parameters used:
+  `complexity`, `file_name`, `function_name`
+- why this confirms the classification:
+  Files with more high-complexity functions are harder to maintain.
+
+Testability Analysis
+- confirmation logic:
+  Rank functions by `complexity`; functions with larger values require more branching and setup to test.
+- main parameters used:
+  `complexity`, `function_name`
+- why this confirms the classification:
+  More cognitively complex functions generally need more test effort and more focused test design.
+
+Risk Detection
+- confirmation logic:
+  No direct risk-specific rule, severity field, or defect indicator is emitted by complexipy.
+- main parameters used:
+  N/A
+- why this confirms the classification:
+  Complexity alone is insufficient here to claim direct risk detection from this notebook output.
+
+Refactoring Guidance
+- confirmation logic:
+  No explicit recommendation, threshold breach message, or refactor hint is emitted in the current output.
+- main parameters used:
+  N/A
+- why this confirms the classification:
+  The output shows measurements only, not direct refactoring guidance.
+
+Code Review Support
+- confirmation logic:
+  No reviewer-oriented issue message, file-line pinpointing, or actionable review finding is emitted in the current output.
+- main parameters used:
+  N/A
+- why this confirms the classification:
+  The output is metric-oriented rather than review-comment oriented.
+
+Testing Effort Prioritization
+- confirmation logic:
+  Sort functions by `complexity` descending and prioritize the highest-complexity functions first.
+- main parameters used:
+  `complexity`, `function_name`, `path`
+- why this confirms the classification:
+  The highest-complexity functions are the most likely to need deeper testing effort first.
